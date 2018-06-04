@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'gonicon';
+  src:  url('fonts/gonicon.eot?t311fg');
+  src:  url('fonts/gonicon.eot?t311fg#iefix') format('embedded-opentype'),
+    url('fonts/gonicon.ttf?t311fg') format('truetype'),
+    url('fonts/gonicon.woff?t311fg') format('woff'),
+    url('fonts/gonicon.svg?t311fg#gonicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="gonicon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gonicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gonicon-1:before {
+  content: "\e900";
+}
+.gonicon-2:before {
+  content: "\e901";
+}
+.gonicon-3:before {
+  content: "\e902";
+}
+.gonicon-4:before {
+  content: "\e903";
+}
+.gonicon-5:before {
+  content: "\e904";
+}
+.gonicon-6:before {
+  content: "\e905";
+}
+.gonicon-7:before {
+  content: "\e906";
+}
+.gonicon-8:before {
+  content: "\e907";
+}
+.gonicon-9:before {
+  content: "\e908";
+}
+.gonicon-10:before {
+  content: "\e909";
+}
+.gonicon-11:before {
+  content: "\e90a";
+}
+.gonicon-12:before {
+  content: "\e90b";
+}
+.gonicon-13:before {
+  content: "\e90c";
+}
+.gonicon-14:before {
+  content: "\e90d";
+}
+.gonicon-15:before {
+  content: "\e90e";
+}
+.gonicon-16:before {
+  content: "\e90f";
+}
+.gonicon-17:before {
+  content: "\e910";
+}
+.gonicon-18:before {
+  content: "\e911";
+}
+.gonicon-19:before {
+  content: "\e912";
+}
+.gonicon-20:before {
+  content: "\e913";
+}
+.gonicon-21:before {
+  content: "\e914";
+}
+.gonicon-22:before {
+  content: "\e915";
+}
+.gonicon-23:before {
+  content: "\e916";
+}
+.gonicon-24:before {
+  content: "\e917";
+}
+.gonicon-25:before {
+  content: "\e918";
+}
+.gonicon-26:before {
+  content: "\e919";
+}
+.gonicon-27:before {
+  content: "\e91a";
+}
+.gonicon-28:before {
+  content: "\e91b";
+}
+.gonicon-29:before {
+  content: "\e91c";
+}
+.gonicon-30:before {
+  content: "\e91d";
+}
+.gonicon-31:before {
+  content: "\e91e";
+}
+.gonicon-32:before {
+  content: "\e91f";
+}
+.gonicon-33:before {
+  content: "\e920";
+}
+.gonicon-34:before {
+  content: "\e921";
+}
+.gonicon-35:before {
+  content: "\e922";
+}
+.gonicon-36:before {
+  content: "\e923";
+}
+.gonicon-37:before {
+  content: "\e924";
+}
+.gonicon-38:before {
+  content: "\e925";
+}
+.gonicon-39:before {
+  content: "\e926";
+}
+.gonicon-40:before {
+  content: "\e927";
+}
+.gonicon-41:before {
+  content: "\e928";
+}
+.gonicon-42:before {
+  content: "\e929";
+}
+.gonicon-43:before {
+  content: "\e92a";
+}
+.gonicon-44:before {
+  content: "\e92b";
+}
+.gonicon-45:before {
+  content: "\e92c";
+}
+.gonicon-46:before {
+  content: "\e92d";
+}
+.gonicon-47:before {
+  content: "\e92e";
+}
+.gonicon-48:before {
+  content: "\e92f";
+}
