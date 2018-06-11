@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'gonicon';
+  font-family: 'gonicon-weather';
   src:  url('fonts/gonicon.eot?t311fg');
   src:  url('fonts/gonicon.eot?t311fg#iefix') format('embedded-opentype'),
     url('fonts/gonicon.ttf?t311fg') format('truetype'),
@@ -9,9 +9,9 @@
   font-style: normal;
 }
 
-[class^="gonicon-"], [class*=" icon-"] {
+.gonicon-weather{
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'gonicon' !important;
+  font-family: 'gonicon-weather' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
