@@ -296,7 +296,7 @@ var ListPage = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\" [ngClass]=\"{'fadeOut animated': main}\">\r\n  <button \r\n    [ngClass]=\"{'bounceOutUp animated': open}\" \r\n    type=\"button\"\r\n    #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
+module.exports = "<div class=\"content fadeOut\" #content>\r\n  <button class=\"bounceOutUp\" type=\"button\" \r\n    #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
 
 /***/ }),
 
@@ -337,8 +337,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var MainPage = /** @class */ (function () {
-    function MainPage(router) {
+    function MainPage(router, renterer) {
         this.router = router;
+        this.renterer = renterer;
         this.open = false;
         this.main = false;
         this.events = [];
@@ -347,16 +348,21 @@ var MainPage = /** @class */ (function () {
     MainPage.prototype.ngAfterViewInit = function () {
         var _this = this;
         var buttonStream$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.startButton.nativeElement, 'click')
-            .do(function () { return _this.open = true; })
-            .delay(500)
-            .do(function () { return _this.main = true; })
-            .delay(1500)
+            .do(function () {
+            _this.renterer.addClass(_this.content.nativeElement, 'animated');
+            _this.renterer.addClass(_this.content.nativeElement, 'animated');
+        })
+            .delay(2000)
             .subscribe(function (res) { return _this.router.navigate(['/list']); });
         this.events.push(buttonStream$);
     };
     MainPage.prototype.ngOnDestroy = function () {
         this.events.forEach(function (ele) { return ele.unsubscribe(); });
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('content'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], MainPage.prototype, "content", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('startButton'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -367,7 +373,8 @@ var MainPage = /** @class */ (function () {
             template: __webpack_require__(/*! ./main.html */ "./src/app/pages/main/main.html"),
             styles: [__webpack_require__(/*! ./main.scss */ "./src/app/pages/main/main.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
     ], MainPage);
     return MainPage;
 }());
