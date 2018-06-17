@@ -296,7 +296,7 @@ var ListPage = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\" #content>\r\n  <button type=\"button\" \r\n    #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
+module.exports = "<div class=\"content\" #content>\r\n  <button type=\"button\" #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
 
 /***/ }),
 
@@ -307,7 +307,7 @@ module.exports = "<div class=\"content\" #content>\r\n  <button type=\"button\" 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".content {\n  height: 100%;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-animation-delay: 1s;\n  animation-delay: 1s; }\n  .content button {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw !important;\n    width: 47.5vw;\n    height: 16.9vw;\n    margin: 0 auto;\n    background-color: #fff5fa;\n    color: #ea0076;\n    border: 0;\n    border-radius: 8.4vw;\n    font-weight: 600;\n    font-size: 5.3vw; }\n  .content button:focus {\n    outline: none; }\n"
+module.exports = ".content {\n  height: 100%;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-animation-delay: 1s;\n  animation-delay: 1s;\n  position: relative; }\n  .content button {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw !important;\n    width: 47.5vw;\n    height: 16.9vw;\n    margin: 0 auto;\n    background-color: #fff5fa;\n    color: #ea0076;\n    border: 0;\n    border-radius: 8.4vw;\n    font-weight: 600;\n    font-size: 5.3vw; }\n  .content button:focus {\n    outline: none; }\n"
 
 /***/ }),
 
@@ -324,6 +324,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+// ng build --base-href https://go-eun.github.io --deploy-url https://go-eun.github.io/
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -349,10 +350,8 @@ var MainPage = /** @class */ (function () {
         var _this = this;
         var buttonStream$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.startButton.nativeElement, 'click')
             .do(function () {
-            _this.renterer.addClass(_this.content.nativeElement, 'fadeOut');
-            _this.renterer.addClass(_this.content.nativeElement, 'animated');
-            _this.renterer.addClass(_this.startButton.nativeElement, 'bounceOutUp');
-            _this.renterer.addClass(_this.startButton.nativeElement, 'animated');
+            _this.startButton.nativeElement.className += "bounceOutUp animated";
+            _this.content.nativeElement.className += " fadeOut animated";
         })
             .delay(2000)
             .subscribe(function (res) { return _this.router.navigate(['/list']); });
