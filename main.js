@@ -296,7 +296,7 @@ var ListPage = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content fadeOut\" #content>\r\n  <button class=\"bounceOutUp\" type=\"button\" \r\n    #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
+module.exports = "<div class=\"content\" #content>\r\n  <button type=\"button\" \r\n    #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
 
 /***/ }),
 
@@ -307,7 +307,7 @@ module.exports = "<div class=\"content fadeOut\" #content>\r\n  <button class=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".content {\n  height: 100%;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center; }\n  .content button {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw !important;\n    width: 47.5vw;\n    height: 16.9vw;\n    margin: 0 auto;\n    background-color: #fff5fa;\n    color: #ea0076;\n    border: 0;\n    border-radius: 8.4vw;\n    font-weight: 600;\n    font-size: 5.3vw; }\n  .content button:focus {\n    outline: none; }\n"
+module.exports = ".content {\n  height: 100%;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  -webkit-animation-delay: 1s;\n  animation-delay: 1s; }\n  .content button {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw !important;\n    width: 47.5vw;\n    height: 16.9vw;\n    margin: 0 auto;\n    background-color: #fff5fa;\n    color: #ea0076;\n    border: 0;\n    border-radius: 8.4vw;\n    font-weight: 600;\n    font-size: 5.3vw; }\n  .content button:focus {\n    outline: none; }\n"
 
 /***/ }),
 
@@ -349,8 +349,10 @@ var MainPage = /** @class */ (function () {
         var _this = this;
         var buttonStream$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.startButton.nativeElement, 'click')
             .do(function () {
+            _this.renterer.addClass(_this.content.nativeElement, 'fadeOut');
             _this.renterer.addClass(_this.content.nativeElement, 'animated');
-            _this.renterer.addClass(_this.content.nativeElement, 'animated');
+            _this.renterer.addClass(_this.startButton.nativeElement, 'bounceOutUp');
+            _this.renterer.addClass(_this.startButton.nativeElement, 'animated');
         })
             .delay(2000)
             .subscribe(function (res) { return _this.router.navigate(['/list']); });
