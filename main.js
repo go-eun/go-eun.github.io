@@ -106,12 +106,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
 /* harmony import */ var _pages_main_main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/main/main */ "./src/app/pages/main/main.ts");
 /* harmony import */ var _pages_list_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/list/list */ "./src/app/pages/list/list.ts");
+/* harmony import */ var _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/list/list-menu-component/list-menu-component */ "./src/app/pages/list/list-menu-component/list-menu-component.ts");
+/* harmony import */ var _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./uiBox/closeButton/closeButton */ "./src/app/uiBox/closeButton/closeButton.ts");
+/* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
+/* harmony import */ var _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./uiBox/carousel/carousel */ "./src/app/uiBox/carousel/carousel.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -127,12 +135,17 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
                 _pages_main_main__WEBPACK_IMPORTED_MODULE_5__["MainPage"],
-                _pages_list_list__WEBPACK_IMPORTED_MODULE_6__["ListPage"]
+                _pages_list_list__WEBPACK_IMPORTED_MODULE_6__["ListPage"],
+                _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_7__["ListMenuComponent"],
+                // ui
+                _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_8__["CloseButtonUi"],
+                _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_10__["CarouselUi"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
-                _app_routing__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"]
+                _app_routing__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
+                _ngu_carousel__WEBPACK_IMPORTED_MODULE_9__["NguCarouselModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -182,13 +195,83 @@ var AppRoutingModule = /** @class */ (function () {
     }
     AppRoutingModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, { useHash: false })],
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, { useHash: true })],
             exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]],
             providers: []
         }),
         __metadata("design:paramtypes", [])
     ], AppRoutingModule);
     return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/list/list-menu-component/list-menu-component.html":
+/*!*************************************************************************!*\
+  !*** ./src/app/pages/list/list-menu-component/list-menu-component.html ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"list-menu-component-content\">\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"carousel-wrapper\">\r\n      <carousel-ui></carousel-ui>\r\n    </div>\r\n\r\n    <div class=\"description-wrapper\">\r\n      <div class=\"label\">\r\n        <strong>B</strong>\r\n        <span>lue sky</span>\r\n      </div>\r\n      <div class=\"description\">\r\n        <!-- 오늘의 날씨를 한눈에 인지하기 쉬운 \r\n        정사각형의 픽셀형태로 제작하였습니다. \r\n        ‘ 해, 구름, 번개, 태풍등.. ’ 하나의 \r\n        주제가 되는 날씨에 각각의 색을 \r\n        부여하여 의미를 더하였습니다. -->\r\n        아직 다 안만들었으니까 기다려 주세영!\r\n        아직 다 안만들었으니까 기다려 주세영!\r\n        아직 다 안만들었으니까 기다려 주세영!\r\n        아직 다 안만들었으니까 기다려 주세영!\r\n      </div>\r\n    </div>\r\n\r\n    <img class=\"logo\" src=\"assets/img/list-menu-logo.svg\">\r\n\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/list/list-menu-component/list-menu-component.scss":
+/*!*************************************************************************!*\
+  !*** ./src/app/pages/list/list-menu-component/list-menu-component.scss ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".list-menu-component-content {\n  height: 100%;\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.9);\n  z-index: 999;\n  position: absolute;\n  top: 0;\n  left: 0; }\n  .list-menu-component-content .component-wrapper {\n    width: 100%;\n    height: 100%;\n    position: relative;\n    padding-top: 36.6vw; }\n  .list-menu-component-content .component-wrapper .close-box-outer {\n      position: absolute;\n      top: 10.6vw;\n      right: 10.6vw;\n      width: 10.6vw;\n      height: 10.6vw; }\n  .list-menu-component-content .component-wrapper .carousel-wrapper {\n      height: 37.5vw;\n      width: 100%;\n      margin-bottom: 19.1vw; }\n  .list-menu-component-content .component-wrapper .description-wrapper {\n      padding: 0 10.6vw; }\n  .list-menu-component-content .component-wrapper .description-wrapper .label {\n        margin-bottom: 6.9vw; }\n  .list-menu-component-content .component-wrapper .description-wrapper .label strong {\n          font-family: 'DevanagariSangamMN-Bold';\n          font-size: 9.4vw;\n          color: #438fe8;\n          font-weight: 600;\n          margin-right: 2.2vw;\n          -webkit-animation-delay: 2s;\n          animation-delay: 2s; }\n  .list-menu-component-content .component-wrapper .description-wrapper .label span {\n          font-family: 'DevanagariSangamMN';\n          font-size: 9.4vw;\n          color: #4a4a4a;\n          -webkit-animation-delay: 2.5s;\n          animation-delay: 2.5s; }\n  .list-menu-component-content .component-wrapper .description-wrapper .description {\n        width: 59.4vw;\n        font-size: 4.1vw;\n        letter-spacing: -1px;\n        line-height: 6.3vw;\n        color: #4a4a4a; }\n  .list-menu-component-content .component-wrapper .logo {\n      position: absolute;\n      width: 19.7vw;\n      right: 10.6vw;\n      bottom: 10.6vw; }\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/list/list-menu-component/list-menu-component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/pages/list/list-menu-component/list-menu-component.ts ***!
+  \***********************************************************************/
+/*! exports provided: ListMenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListMenuComponent", function() { return ListMenuComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ListMenuComponent = /** @class */ (function () {
+    function ListMenuComponent(router, renderer) {
+        this.router = router;
+        this.renderer = renderer;
+    }
+    ListMenuComponent.prototype.ngOnInit = function () {
+    };
+    ListMenuComponent.prototype.ngAfterViewInit = function () {
+    };
+    ListMenuComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'list-menu-component',
+            template: __webpack_require__(/*! ./list-menu-component.html */ "./src/app/pages/list/list-menu-component/list-menu-component.html"),
+            styles: [__webpack_require__(/*! ./list-menu-component.scss */ "./src/app/pages/list/list-menu-component/list-menu-component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], ListMenuComponent);
+    return ListMenuComponent;
 }());
 
 
@@ -202,7 +285,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <img class=\"search-icon\" src=\"assets/img/list-search-icon.svg\">\r\n    <img class=\"menu-icon\" src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        01\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" #nameB>B</strong>\r\n        <span class=\"fadeIn\" #nameSky>lue sky</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img class=\"weather-logo fadeInRight\" #weatherLogo src=\"assets/img/weather-logo.svg\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      오늘의 날씨를 한눈에 인지하기 쉬운 정사각<br>\r\n      형의 픽셀형태로 제작하였습니다. ‘ 해, 구름,<br> \r\n      번개, 태풍등.. ’ 하나의 주제가 되는 날씨에<br> \r\n      각각의 색을 부여하여 의미를 더하였습니다.\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun\"></div>\r\n      <div class=\"name\">sun</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny\"></div>\r\n      <div class=\"name\">sunny</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunshine\"></div>\r\n      <div class=\"name\">sunshine</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud\"></div>\r\n      <div class=\"name\">cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_cloud\"></div>\r\n      <div class=\"name\">sun_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_cloud\"></div>\r\n      <div class=\"name\">sunny_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunshine_cloud\"></div>\r\n      <div class=\"name\">sunshine_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_cloud\"></div>\r\n      <div class=\"name\">rainy_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_lightning_cloud\"></div>\r\n      <div class=\"name\">sun_lightning_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_rainy\"></div>\r\n      <div class=\"name\">lightning_rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_snow\"></div>\r\n      <div class=\"name\">lightning_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_hail\"></div>\r\n      <div class=\"name\">lightning_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog_cloud\"></div>\r\n      <div class=\"name\">fog_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_fog_cloud\"></div>\r\n      <div class=\"name\">sun_fog_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog_lightning\"></div>\r\n      <div class=\"name\">fog_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cumulus_cloud\"></div>\r\n      <div class=\"name\">cumulus_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow_cloud\"></div>\r\n      <div class=\"name\">snow_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail_snow\"></div>\r\n      <div class=\"name\">hail_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow\"></div>\r\n      <div class=\"name\">snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail\"></div>\r\n      <div class=\"name\">hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog\"></div>\r\n      <div class=\"name\">fog</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy\"></div>\r\n      <div class=\"name\">rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_snow\"></div>\r\n      <div class=\"name\">rainy_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_snow\"></div>\r\n      <div class=\"name\">heavy_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_hail\"></div>\r\n      <div class=\"name\">heavy_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud\"></div>\r\n      <div class=\"name\">heavy_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-dark_cloud\"></div>\r\n      <div class=\"name\">dark_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow_lightning\"></div>\r\n      <div class=\"name\">snow_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail_lightning\"></div>\r\n      <div class=\"name\">hail_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_lightning\"></div>\r\n      <div class=\"name\">rainy_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-dark_cloud_lightning\"></div>\r\n      <div class=\"name\">dark_cloud_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_season\"></div>\r\n      <div class=\"name\">rainy_season</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_rainy_season\"></div>\r\n      <div class=\"name\">heavy_rainy_season</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_rainy_lightning\"></div>\r\n      <div class=\"name\">heavy_rainy_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-shower\"></div>\r\n      <div class=\"name\">shower</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_rainy\"></div>\r\n      <div class=\"name\">typhoon_rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_hail\"></div>\r\n      <div class=\"name\">typhoon_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_fog\"></div>\r\n      <div class=\"name\">typhoon_fog</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon\"></div>\r\n      <div class=\"name\">typhoon</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_lightning\"></div>\r\n      <div class=\"name\">typhoon_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-wind_lightning\"></div>\r\n      <div class=\"name\">wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_wind_lightning1\"></div>\r\n      <div class=\"name\">sunny_wind_lightning1</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud_wind_lightning\"></div>\r\n      <div class=\"name\">cloud_wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud_wind_lightning\"></div>\r\n      <div class=\"name\">heavy_cloud_wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_wind_lightning2\"></div>\r\n      <div class=\"name\">sunny_wind_lightning2</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-wind\"></div>\r\n      <div class=\"name\">wind</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud_wind\"></div>\r\n      <div class=\"name\">cloud_wind</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud_wind\"></div>\r\n      <div class=\"name\">heavy_cloud_wind</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
+module.exports = "\r\n<list-menu-component *ngIf=\"menuState\"></list-menu-component>\r\n\r\n<div class=\"content\" [ngClass]=\"{'hold': menuState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <img class=\"search-icon\" src=\"assets/img/list-search-icon.svg\">\r\n    <img class=\"menu-icon\" (click)=\"menuOpen()\" src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        01\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" #nameB>B</strong>\r\n        <span class=\"fadeIn\" #nameSky>lue sky</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img class=\"weather-logo fadeInRight\" #weatherLogo src=\"assets/img/weather-logo.svg\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      오늘의 날씨를 한눈에 인지하기 쉬운 정사각<br>\r\n      형의 픽셀형태로 제작하였습니다. ‘ 해, 구름,<br> \r\n      번개, 태풍등.. ’ 하나의 주제가 되는 날씨에<br> \r\n      각각의 색을 부여하여 의미를 더하였습니다.\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun\"></div>\r\n      <div class=\"name\">sun</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny\"></div>\r\n      <div class=\"name\">sunny</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunshine\"></div>\r\n      <div class=\"name\">sunshine</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud\"></div>\r\n      <div class=\"name\">cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_cloud\"></div>\r\n      <div class=\"name\">sun_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_cloud\"></div>\r\n      <div class=\"name\">sunny_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunshine_cloud\"></div>\r\n      <div class=\"name\">sunshine_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_cloud\"></div>\r\n      <div class=\"name\">rainy_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_lightning_cloud\"></div>\r\n      <div class=\"name\">sun_lightning_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_rainy\"></div>\r\n      <div class=\"name\">lightning_rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_snow\"></div>\r\n      <div class=\"name\">lightning_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_hail\"></div>\r\n      <div class=\"name\">lightning_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog_cloud\"></div>\r\n      <div class=\"name\">fog_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_fog_cloud\"></div>\r\n      <div class=\"name\">sun_fog_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog_lightning\"></div>\r\n      <div class=\"name\">fog_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cumulus_cloud\"></div>\r\n      <div class=\"name\">cumulus_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow_cloud\"></div>\r\n      <div class=\"name\">snow_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail_snow\"></div>\r\n      <div class=\"name\">hail_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow\"></div>\r\n      <div class=\"name\">snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail\"></div>\r\n      <div class=\"name\">hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog\"></div>\r\n      <div class=\"name\">fog</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy\"></div>\r\n      <div class=\"name\">rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_snow\"></div>\r\n      <div class=\"name\">rainy_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_snow\"></div>\r\n      <div class=\"name\">heavy_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_hail\"></div>\r\n      <div class=\"name\">heavy_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud\"></div>\r\n      <div class=\"name\">heavy_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-dark_cloud\"></div>\r\n      <div class=\"name\">dark_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow_lightning\"></div>\r\n      <div class=\"name\">snow_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail_lightning\"></div>\r\n      <div class=\"name\">hail_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_lightning\"></div>\r\n      <div class=\"name\">rainy_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-dark_cloud_lightning\"></div>\r\n      <div class=\"name\">dark_cloud_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_season\"></div>\r\n      <div class=\"name\">rainy_season</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_rainy_season\"></div>\r\n      <div class=\"name\">heavy_rainy_season</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_rainy_lightning\"></div>\r\n      <div class=\"name\">heavy_rainy_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-shower\"></div>\r\n      <div class=\"name\">shower</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_rainy\"></div>\r\n      <div class=\"name\">typhoon_rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_hail\"></div>\r\n      <div class=\"name\">typhoon_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_fog\"></div>\r\n      <div class=\"name\">typhoon_fog</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon\"></div>\r\n      <div class=\"name\">typhoon</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_lightning\"></div>\r\n      <div class=\"name\">typhoon_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-wind_lightning\"></div>\r\n      <div class=\"name\">wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_wind_lightning1\"></div>\r\n      <div class=\"name\">sunny_wind_lightning1</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud_wind_lightning\"></div>\r\n      <div class=\"name\">cloud_wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud_wind_lightning\"></div>\r\n      <div class=\"name\">heavy_cloud_wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_wind_lightning2\"></div>\r\n      <div class=\"name\">sunny_wind_lightning2</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-wind\"></div>\r\n      <div class=\"name\">wind</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud_wind\"></div>\r\n      <div class=\"name\">cloud_wind</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud_wind\"></div>\r\n      <div class=\"name\">heavy_cloud_wind</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
 
 /***/ }),
 
@@ -213,7 +296,7 @@ module.exports = "<div class=\"content\">\r\n\r\n  <div class=\"header-wrapper f
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".content {\n  height: 100%; }\n  .content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right; }\n  .content .header-wrapper img {\n      vertical-align: middle; }\n  .content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n  .content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n  .content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n  .content .logo-wrapper .name-panel {\n      float: left; }\n  .content .logo-wrapper .name-panel .big-number {\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n  .content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        color: #438fe8;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n  .content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n  .content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n  .content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n  .content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n  .content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n  .content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n  .content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
+module.exports = ".content {\n  height: 100%; }\n  .content.hold {\n    overflow: hidden;\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px);\n    filter: blur(7px); }\n  .content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right; }\n  .content .header-wrapper img {\n      vertical-align: middle; }\n  .content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n  .content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n  .content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n  .content .logo-wrapper .name-panel {\n      float: left; }\n  .content .logo-wrapper .name-panel .big-number {\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n  .content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        color: #438fe8;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n  .content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n  .content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n  .content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n  .content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n  .content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n  .content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n  .content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
 
 /***/ }),
 
@@ -244,6 +327,7 @@ var ListPage = /** @class */ (function () {
     function ListPage(router, renderer) {
         this.router = router;
         this.renderer = renderer;
+        this.menuState = true;
     }
     ListPage.prototype.ngOnInit = function () { };
     ListPage.prototype.ngAfterViewInit = function () {
@@ -252,6 +336,9 @@ var ListPage = /** @class */ (function () {
         this.renderer.addClass(this.nameB.nativeElement, 'animated');
         this.renderer.addClass(this.nameSky.nativeElement, 'animated');
         this.renderer.addClass(this.infoWrapper.nativeElement, 'animated');
+    };
+    ListPage.prototype.menuOpen = function () {
+        this.menuState = true;
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('bigNumber'),
@@ -378,6 +465,184 @@ var MainPage = /** @class */ (function () {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
     ], MainPage);
     return MainPage;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/uiBox/carousel/carousel.html":
+/*!**********************************************!*\
+  !*** ./src/app/uiBox/carousel/carousel.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"carousel-content\">\r\n  <div class=\"carousel-list\" #carouselList>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/uiBox/carousel/carousel.scss":
+/*!**********************************************!*\
+  !*** ./src/app/uiBox/carousel/carousel.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".carousel-content {\n  width: 100%;\n  height: 100%;\n  overflow: hidden; }\n  .carousel-content .carousel-list {\n    white-space: nowrap;\n    overflow: visible; }\n  .carousel-content .carousel-list .carousel-item {\n      display: inline-block; }\n"
+
+/***/ }),
+
+/***/ "./src/app/uiBox/carousel/carousel.ts":
+/*!********************************************!*\
+  !*** ./src/app/uiBox/carousel/carousel.ts ***!
+  \********************************************/
+/*! exports provided: CarouselUi */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarouselUi", function() { return CarouselUi; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CarouselUi = /** @class */ (function () {
+    function CarouselUi(router, renderer) {
+        this.router = router;
+        this.renderer = renderer;
+    }
+    CarouselUi.prototype.ngOnInit = function () { };
+    CarouselUi.prototype.ngAfterViewInit = function () {
+        this.touchStart$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.carouselList.nativeElement, 'touchstart');
+        this.touchMove$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.carouselList.nativeElement, 'touchmove');
+        this.touchEnd$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.carouselList.nativeElement, 'touchend');
+        // Observable.fromEvent(window, 'mousemove')
+        // .subscribe(event => {
+        //   console.log("mousemove event :: ", event)
+        // })
+        // Observable.fromEvent(this.carouselList.nativeElement, 'mousedown')
+        // .subscribe(event => {
+        //   console.log('mousedown event :: ', event)
+        // })
+        this.touchEventSet();
+    };
+    CarouselUi.prototype.touchEventSet = function () {
+        var _this = this;
+        this.touchStart$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["mergeMap"])(function (start) { return _this.touchMove$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(_this.touchEnd$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (move) {
+            return { start: start, move: move };
+        })); })).subscribe(function (e) {
+            var startPoint = e.start.changedTouches[0].pageX;
+            var movePoint = e.move.changedTouches[0].pageX;
+            var sub = movePoint - startPoint;
+            _this.translateX(_this.carouselList.nativeElement, sub);
+        });
+    };
+    CarouselUi.prototype.translateX = function (element, deltaX, duration, callback) {
+        if (duration === void 0) { duration = 0; }
+        if (callback === void 0) { callback = null; }
+        element.style.transition = 'transform ' + duration + 's';
+        element.style.transform = 'translate3d(' + deltaX + 'px, 0, 0)';
+        if (duration > 0 && callback) {
+            element.addEventListener('transitionend', callback, { once: true });
+        }
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('carouselList'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], CarouselUi.prototype, "carouselList", void 0);
+    CarouselUi = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'carousel-ui',
+            template: __webpack_require__(/*! ./carousel.html */ "./src/app/uiBox/carousel/carousel.html"),
+            styles: [__webpack_require__(/*! ./carousel.scss */ "./src/app/uiBox/carousel/carousel.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], CarouselUi);
+    return CarouselUi;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/uiBox/closeButton/closeButton.html":
+/*!****************************************************!*\
+  !*** ./src/app/uiBox/closeButton/closeButton.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"close-box-inner\">\r\n  <div class=\"top line\"></div>\r\n  <div class=\"bottom line\"></div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/uiBox/closeButton/closeButton.scss":
+/*!****************************************************!*\
+  !*** ./src/app/uiBox/closeButton/closeButton.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "@-webkit-keyframes close-width-top {\n  0% {\n    top: 0%;\n    left: 0vw;\n    width: 0; }\n  100% {\n    top: 50%;\n    left: -1.9vw;\n    width: 14.4vw; } }\n\n@keyframes close-width-top {\n  0% {\n    top: 0%;\n    left: 0vw;\n    width: 0; }\n  100% {\n    top: 50%;\n    left: -1.9vw;\n    width: 14.4vw; } }\n\n@-webkit-keyframes close-width-bottom {\n  0% {\n    bottom: 0%;\n    left: 0vw;\n    width: 0; }\n  100% {\n    bottom: 50%;\n    left: -1.9vw;\n    width: 14.4vw; } }\n\n@keyframes close-width-bottom {\n  0% {\n    bottom: 0%;\n    left: 0vw;\n    width: 0; }\n  100% {\n    bottom: 50%;\n    left: -1.9vw;\n    width: 14.4vw; } }\n\n.close-box-inner {\n  position: relative;\n  width: 100%;\n  height: 100%; }\n\n.close-box-inner .line {\n    position: absolute;\n    height: 2px;\n    background-color: #9b9b9b;\n    margin-bottom: -1px;\n    transition: width 1s ease-in-out; }\n\n.close-box-inner .top {\n    -webkit-animation: close-width-top 1s;\n            animation: close-width-top 1s;\n    -webkit-animation-iteration-count: 1;\n            animation-iteration-count: 1;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg); }\n\n.close-box-inner .bottom {\n    -webkit-animation: close-width-bottom 1s;\n            animation: close-width-bottom 1s;\n    -webkit-animation-delay: 1s;\n            animation-delay: 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-iteration-count: 1;\n            animation-iteration-count: 1;\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg); }\n"
+
+/***/ }),
+
+/***/ "./src/app/uiBox/closeButton/closeButton.ts":
+/*!**************************************************!*\
+  !*** ./src/app/uiBox/closeButton/closeButton.ts ***!
+  \**************************************************/
+/*! exports provided: CloseButtonUi */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CloseButtonUi", function() { return CloseButtonUi; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CloseButtonUi = /** @class */ (function () {
+    function CloseButtonUi(router, renderer) {
+        this.router = router;
+        this.renderer = renderer;
+    }
+    CloseButtonUi.prototype.ngOnInit = function () { };
+    CloseButtonUi.prototype.ngAfterViewInit = function () {
+    };
+    CloseButtonUi = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'close-button',
+            template: __webpack_require__(/*! ./closeButton.html */ "./src/app/uiBox/closeButton/closeButton.html"),
+            styles: [__webpack_require__(/*! ./closeButton.scss */ "./src/app/uiBox/closeButton/closeButton.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], CloseButtonUi);
+    return CloseButtonUi;
 }());
 
 
