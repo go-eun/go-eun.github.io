@@ -489,7 +489,7 @@ module.exports = "<div class=\"carousel-content\">\r\n  <div class=\"carousel-li
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".carousel-content {\n  width: 100%;\n  height: 100%;\n  overflow: hidden; }\n  .carousel-content .carousel-list {\n    white-space: nowrap;\n    overflow: visible; }\n  .carousel-content .carousel-list .carousel-item {\n      display: inline-block; }\n"
+module.exports = ".carousel-content {\n  width: 100%;\n  height: 100%;\n  overflow: hidden; }\n  .carousel-content .carousel-list {\n    white-space: nowrap;\n    overflow: visible; }\n  .carousel-content .carousel-list .carousel-item {\n      display: inline-block;\n      margin: 0 5vw; }\n  .carousel-content .carousel-list .carousel-item:first-child {\n        margin-left: 31.3vw; }\n  .carousel-content .carousel-list .carousel-item:last-child {\n        margin-right: 31.3vw; }\n"
 
 /***/ }),
 
@@ -524,6 +524,7 @@ var CarouselUi = /** @class */ (function () {
     function CarouselUi(router, renderer) {
         this.router = router;
         this.renderer = renderer;
+        this.listStartPosition = 0;
     }
     CarouselUi.prototype.ngOnInit = function () { };
     CarouselUi.prototype.ngAfterViewInit = function () {
@@ -542,23 +543,30 @@ var CarouselUi = /** @class */ (function () {
     };
     CarouselUi.prototype.touchEventSet = function () {
         var _this = this;
-        this.touchStart$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["mergeMap"])(function (start) { return _this.touchMove$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(_this.touchEnd$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (move) {
-            return { start: start, move: move };
-        })); })).subscribe(function (e) {
+        this.touchStart$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["mergeMap"])(function (start) {
+            _this.listStartPosition = _this.carouselList.nativeElement.getBoundingClientRect().x;
+            return _this.touchMove$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(_this.touchEnd$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (move) {
+                return { start: start, move: move };
+            }));
+        })).subscribe(function (e) {
             var startPoint = e.start.changedTouches[0].pageX;
             var movePoint = e.move.changedTouches[0].pageX;
             var sub = movePoint - startPoint;
-            _this.translateX(_this.carouselList.nativeElement, sub);
+            _this.translateX(_this.carouselList, sub);
         });
     };
     CarouselUi.prototype.translateX = function (element, deltaX, duration, callback) {
         if (duration === void 0) { duration = 0; }
         if (callback === void 0) { callback = null; }
-        element.style.transition = 'transform ' + duration + 's';
-        element.style.transform = 'translate3d(' + deltaX + 'px, 0, 0)';
+        element.nativeElement.style.transition = 'transform ' + duration + 's';
+        element.nativeElement.style.transform = 'translate3d(' + (this.listStartPosition + deltaX) + 'px, 0, 0)';
         if (duration > 0 && callback) {
-            element.addEventListener('transitionend', callback, { once: true });
+            element.nativeElement.addEventListener('transitionend', callback, { once: true });
         }
+    };
+    CarouselUi.prototype.updateIndicator = function (element, index) {
+        element.nativeElement.querySelector('.swiper__indication--active').classList.remove('swiper__indication--active');
+        element.nativeElement.querySelector('.swiper__indication:nth-child(' + (index + 1) + ')').classList.add('swiper__indication--active');
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('carouselList'),
