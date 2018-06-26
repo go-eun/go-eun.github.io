@@ -215,7 +215,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"list-menu-component-content\">\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\" (click)=\"dismiss()\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"carousel-wrapper\">\r\n      <carousel-ui></carousel-ui>\r\n    </div>\r\n\r\n    <div class=\"description-wrapper\">\r\n      <div class=\"label\">\r\n        <strong>B</strong>\r\n        <span>lue sky</span>\r\n      </div>\r\n      <div class=\"description\">\r\n        오늘의 날씨를 한눈에 인지하기 쉬운 \r\n        정사각형의 픽셀형태로 제작하였습니다. \r\n        ‘ 해, 구름, 번개, 태풍등.. ’ 하나의 \r\n        주제가 되는 날씨에 각각의 색을 \r\n        부여하여 의미를 더하였습니다.\r\n      </div>\r\n    </div>\r\n\r\n    <img class=\"logo\" src=\"assets/img/list-menu-logo.svg\">\r\n\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"list-menu-component-content\">\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\" (click)=\"dismiss()\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"carousel-wrapper fadeInRight animated delay-xs\">\r\n      <carousel-ui [itemList]=\"imageList\" (getIndex)=\"getIndex($event)\"></carousel-ui>\r\n    </div>\r\n\r\n    <div #description class=\"description-wrapper fadeIn animated delay-sm\">\r\n      <div class=\"label\">\r\n        <strong [ngStyle]=\"{'color': current.color}\">{{current.bigLabel}}</strong>\r\n        <span>{{current.smallLabel}}</span>\r\n      </div>\r\n      <div class=\"description\">\r\n        {{current.comment}}\r\n      </div>\r\n    </div>\r\n\r\n    <img class=\"logo\" src=\"assets/img/list-menu-logo.svg\">\r\n\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -226,7 +226,7 @@ module.exports = "<div class=\"list-menu-component-content\">\r\n  <div class=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".list-menu-component-content {\n  height: 100%;\n  width: 100%;\n  background-color: rgba(255, 255, 255, 0.9);\n  z-index: 999;\n  position: absolute;\n  top: 0;\n  left: 0; }\n  .list-menu-component-content .component-wrapper {\n    width: 100%;\n    height: 100%;\n    position: relative;\n    padding-top: 36.6vw; }\n  .list-menu-component-content .component-wrapper .close-box-outer {\n      position: absolute;\n      top: 10.6vw;\n      right: 10.6vw;\n      width: 10.6vw;\n      height: 10.6vw; }\n  .list-menu-component-content .component-wrapper .carousel-wrapper {\n      height: 37.5vw;\n      width: 100%;\n      margin-bottom: 19.1vw; }\n  .list-menu-component-content .component-wrapper .description-wrapper {\n      padding: 0 10.6vw; }\n  .list-menu-component-content .component-wrapper .description-wrapper .label {\n        margin-bottom: 6.9vw; }\n  .list-menu-component-content .component-wrapper .description-wrapper .label strong {\n          font-family: 'DevanagariSangamMN-Bold';\n          font-size: 9.4vw;\n          color: #438fe8;\n          font-weight: 600;\n          margin-right: 2.2vw;\n          -webkit-animation-delay: 2s;\n          animation-delay: 2s; }\n  .list-menu-component-content .component-wrapper .description-wrapper .label span {\n          font-family: 'DevanagariSangamMN';\n          font-size: 9.4vw;\n          color: #4a4a4a;\n          -webkit-animation-delay: 2.5s;\n          animation-delay: 2.5s; }\n  .list-menu-component-content .component-wrapper .description-wrapper .description {\n        width: 59.4vw;\n        font-size: 4.1vw;\n        letter-spacing: -1px;\n        line-height: 6.3vw;\n        color: #4a4a4a; }\n  .list-menu-component-content .component-wrapper .logo {\n      position: absolute;\n      width: 19.7vw;\n      right: 10.6vw;\n      bottom: 10.6vw; }\n"
+module.exports = "@-webkit-keyframes background-opacity {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes background-opacity {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n.list-menu-component-content {\n  height: 100%;\n  width: 100%;\n  z-index: 999;\n  position: absolute;\n  top: 0;\n  left: 0;\n  -webkit-animation: background-opacity 1s;\n          animation: background-opacity 1s;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards; }\n\n.list-menu-component-content .component-wrapper {\n    width: 100%;\n    height: 100%;\n    position: relative;\n    padding-top: 36.6vw; }\n\n.list-menu-component-content .component-wrapper .close-box-outer {\n      position: absolute;\n      top: 10.6vw;\n      right: 10.6vw;\n      width: 10.6vw;\n      height: 10.6vw; }\n\n.list-menu-component-content .component-wrapper .carousel-wrapper {\n      height: 37.5vw;\n      width: 100%;\n      margin-bottom: 19.1vw; }\n\n.list-menu-component-content .component-wrapper .description-wrapper {\n      padding: 0 10.6vw; }\n\n.list-menu-component-content .component-wrapper .description-wrapper .label {\n        margin-bottom: 6.9vw; }\n\n.list-menu-component-content .component-wrapper .description-wrapper .label strong {\n          font-family: 'DevanagariSangamMN-Bold';\n          font-size: 9.4vw;\n          color: #438fe8;\n          font-weight: 600;\n          margin-right: 2.2vw;\n          -webkit-animation-delay: 2s;\n          animation-delay: 2s; }\n\n.list-menu-component-content .component-wrapper .description-wrapper .label span {\n          font-family: 'DevanagariSangamMN';\n          font-size: 9.4vw;\n          color: #4a4a4a;\n          -webkit-animation-delay: 2.5s;\n          animation-delay: 2.5s; }\n\n.list-menu-component-content .component-wrapper .description-wrapper .description {\n        width: 59.4vw;\n        font-size: 4.1vw;\n        letter-spacing: -1px;\n        line-height: 6.3vw;\n        color: #4a4a4a; }\n\n.list-menu-component-content .component-wrapper .logo {\n      position: absolute;\n      width: 19.7vw;\n      right: 10.6vw;\n      bottom: 10.6vw; }\n"
 
 /***/ }),
 
@@ -258,18 +258,58 @@ var ListMenuComponent = /** @class */ (function () {
         this.router = router;
         this.renderer = renderer;
         this.closeEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.imageList = [
+            {
+                path: 'assets/img/weather-main-logo.svg',
+                color: "#438fe8",
+                bigLabel: 'B',
+                smallLabel: 'lue sky',
+                comment: "오늘의 날씨를 한눈에 인지하기 쉬운 정사각형의 픽셀형태로 제작하였습니다. ‘ 해, 구름, 번개, 태풍등.. ’ 하나의 주제가 되는 날씨에 각각의 색을 부여하여 의미를 더하였습니다."
+            },
+            {
+                path: 'assets/img/company-main-logo.svg',
+                color: "#913fff",
+                bigLabel: 'P',
+                smallLabel: 'urple company',
+                comment: "회사를 상징하는 요소들을 나타낸 모습을 아이콘으로 담아보았습니다. ‘ 회사, 서류, 직원카드등.. ’ 각각의 요소들은 근무시 많이 보이는 풍경을 담아 냈습니다."
+            },
+            {
+                path: 'assets/img/arrow-main-logo.svg',
+                color: "#4a4a4a",
+                bigLabel: 'B',
+                smallLabel: 'lack arrow',
+                comment: "여러가지 형태의 다양한 화살표를 그려보았습니다. 선,면의 형태로 다양하게 보여줘 실용성을 가지며 한가지형태도 다양한 각도로 표현되었습니다."
+            }
+        ];
+        this.current = this.imageList[0];
+        this.first = false;
     }
     ListMenuComponent.prototype.ngOnInit = function () {
     };
-    ListMenuComponent.prototype.ngAfterViewInit = function () {
-    };
+    ListMenuComponent.prototype.ngAfterViewInit = function () { };
     ListMenuComponent.prototype.dismiss = function () {
         this.closeEvent.emit();
+    };
+    ListMenuComponent.prototype.getIndex = function (e) {
+        if (!this.first) {
+            this.first = true;
+        }
+        else {
+            // this.description.nativeElement.classList.remove('animated');
+            this.description.nativeElement.classList.remove('fadeIn');
+            this.description.nativeElement.classList.remove('delay-sm');
+            // this.description.nativeElement.classList.add('fadeOutLeft');
+        }
+        this.current = this.imageList[e];
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
         __metadata("design:type", Object)
     ], ListMenuComponent.prototype, "closeEvent", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('description'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], ListMenuComponent.prototype, "description", void 0);
     ListMenuComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'list-menu-component',
@@ -304,7 +344,7 @@ module.exports = "\r\n<list-menu-component *ngIf=\"menuState\" (closeEvent)=\"me
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".content {\n  height: 100%; }\n  .content.hold {\n    overflow: hidden;\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px);\n    filter: blur(7px); }\n  .content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right; }\n  .content .header-wrapper img {\n      vertical-align: middle; }\n  .content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n  .content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n  .content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n  .content .logo-wrapper .name-panel {\n      float: left; }\n  .content .logo-wrapper .name-panel .big-number {\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n  .content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        color: #438fe8;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n  .content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n  .content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n  .content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n  .content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n  .content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n  .content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n  .content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
+module.exports = "@-webkit-keyframes blur-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@keyframes blur-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n.content {\n  height: 100%; }\n\n.content.hold {\n    overflow: hidden;\n    -webkit-animation: blur-effect 1s;\n            animation: blur-effect 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right; }\n\n.content .header-wrapper img {\n      vertical-align: middle; }\n\n.content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n\n.content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n\n.content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n\n.content .logo-wrapper .name-panel {\n      float: left; }\n\n.content .logo-wrapper .name-panel .big-number {\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n\n.content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        color: #438fe8;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n\n.content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n\n.content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n\n.content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n\n.content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n\n.content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n\n.content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n\n.content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
 
 /***/ }),
 
@@ -489,7 +529,7 @@ var MainPage = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel-content\">\r\n  <div class=\"carousel-list\" #carouselList>\r\n    <div #firstImage class=\"carousel-item active\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n      <img src=\"assets/img/caroucel-icon.svg\">\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"carousel-content\">\r\n  <div class=\"carousel-list\" #carouselList>\r\n    <div class=\"carousel-item\"\r\n      [ngClass]=\"{'active': i == 0}\"\r\n      *ngFor=\"let item of itemList; let i = index\">\r\n      <img [src]=\"item.path\">\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -535,6 +575,7 @@ var CarouselUi = /** @class */ (function () {
     function CarouselUi(router, renderer) {
         this.router = router;
         this.renderer = renderer;
+        this.getIndex = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.listStartPosition = 0;
     }
     CarouselUi.prototype.ngOnInit = function () { };
@@ -542,7 +583,8 @@ var CarouselUi = /** @class */ (function () {
         this.touchStart$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.carouselList.nativeElement, 'touchstart');
         this.touchMove$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.carouselList.nativeElement, 'touchmove');
         this.touchEnd$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.carouselList.nativeElement, 'touchend');
-        this.itemWidth = this.firstImage.nativeElement.clientWidth;
+        this.itemWidth = this.carouselList.nativeElement.querySelector('.carousel-item').clientWidth;
+        this.getIndex.emit(0);
         this.touchEventSet();
         this.touchEndEventSet();
     };
@@ -566,6 +608,8 @@ var CarouselUi = /** @class */ (function () {
             var x = _this.carouselList.nativeElement.getBoundingClientRect().x;
             var index = Math.floor(-(x - _this.itemWidth / 2) / _this.itemWidth);
             var resX = -index * _this.itemWidth;
+            _this.getIndex.emit(index);
+            _this.updateIndicator(_this.carouselList, index);
             _this.translateX(_this.carouselList, resX, 0.1);
         });
     };
@@ -587,9 +631,13 @@ var CarouselUi = /** @class */ (function () {
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], CarouselUi.prototype, "carouselList", void 0);
     __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('firstImage'),
-        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], CarouselUi.prototype, "firstImage", void 0);
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Array)
+    ], CarouselUi.prototype, "itemList", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"])
+    ], CarouselUi.prototype, "getIndex", void 0);
     CarouselUi = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'carousel-ui',
