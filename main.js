@@ -511,9 +511,9 @@ var ListPage = /** @class */ (function () {
     function ListPage(router, renderer) {
         this.router = router;
         this.renderer = renderer;
-        this.contentState = true;
+        this.contentState = false;
         this.menuState = false;
-        this.guideState = true;
+        this.guideState = false;
     }
     ListPage.prototype.ngOnInit = function () { };
     ListPage.prototype.ngAfterViewInit = function () {
@@ -641,7 +641,7 @@ var MainPage = /** @class */ (function () {
         })
             .delay(2000)
             .subscribe(function (res) {
-            _this.router.navigate(['/guide']);
+            _this.router.navigate(['/list']);
         });
         this.events.push(buttonStream$);
     };
