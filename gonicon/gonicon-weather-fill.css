@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'gonicon-weather';
-  src:  url('gonicon-weather-fonts/gonicon-weather.eot?t311fg');
-  src:  url('gonicon-weather-fonts/gonicon-weather.eot?t311fg#iefix') format('embedded-opentype'),
-    url('gonicon-weather-fonts/gonicon-weather.ttf?t311fg') format('truetype'),
-    url('gonicon-weather-fonts/gonicon-weather.woff?t311fg') format('woff'),
-    url('gonicon-weather-fonts/gonicon-weather.svg?t311fg#gonicon-weather') format('svg');
+  font-family: 'gonicon-weather-fill';
+  src:  url('gonicon-weather-fill-fonts/gonicon-weather-fill.eot?t311fg');
+  src:  url('gonicon-weather-fill-fonts/gonicon-weather-fill.eot?t311fg#iefix') format('embedded-opentype'),
+    url('gonicon-weather-fill-fonts/gonicon-weather-fill.ttf?t311fg') format('truetype'),
+    url('gonicon-weather-fill-fonts/gonicon-weather-fill.woff?t311fg') format('woff'),
+    url('gonicon-weather-fill-fonts/gonicon-weather-fill.svg?t311fg#gonicon-weather') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.gonicon-weather{
+.gonicon-weather-fill{
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'gonicon-weather' !important;
+  font-family: 'gonicon-weather-fill' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

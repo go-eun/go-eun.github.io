@@ -1,4 +1,6 @@
-@import "gonicon/gonicon-weather.css";
+@import "gonicon/gonicon-weather-fill.css";
+@import "gonicon/gonicon-weather-color.css";
+@import "gonicon/gonicon-weather-line.css";
 
 .title{
   margin: 10px;

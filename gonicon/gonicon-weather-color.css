@@ -1,0 +1,528 @@
+@font-face {
+  font-family: 'gonicon-weather-color';
+  src:  url('gonicon-weather-color-fonts/gonicon-weather-color.eot?m42w07');
+  src:  url('gonicon-weather-color-fonts/gonicon-weather-color.eot?m42w07#iefix') format('embedded-opentype'),
+    url('gonicon-weather-color-fonts/gonicon-weather-color.ttf?m42w07') format('truetype'),
+    url('gonicon-weather-color-fonts/gonicon-weather-color.woff?m42w07') format('woff'),
+    url('gonicon-weather-color-fonts/gonicon-weather-color.svg?m42w07#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gonicon-weather-color{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gonicon-weather-color' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gonicon-cloud:before {
+  content: "\e900";
+  color: #00bdff;
+}
+.gonicon-cloud_wind:before {
+  content: "\e901";
+  color: #00bdff;
+}
+.gonicon-cloud_wind_lightning .path1:before {
+  content: "\e902";
+  color: rgb(0, 189, 255);
+}
+.gonicon-cloud_wind_lightning .path2:before {
+  content: "\e903";
+  margin-left: -1.6484375em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-cloud_wind_lightning .path3:before {
+  content: "\e904";
+  margin-left: -1.6484375em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-cumulus_cloud:before {
+  content: "\e905";
+  color: #00bdff;
+}
+.gonicon-dark_cloud .path1:before {
+  content: "\e906";
+  color: rgb(128, 128, 128);
+}
+.gonicon-dark_cloud .path2:before {
+  content: "\e907";
+  margin-left: -1.65234375em;
+  color: rgb(102, 102, 102);
+}
+.gonicon-dark_cloud_lightning .path1:before {
+  content: "\e908";
+  color: rgb(0, 189, 255);
+}
+.gonicon-dark_cloud_lightning .path2:before {
+  content: "\e909";
+  margin-left: -1.091796875em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-fog .path1:before {
+  content: "\e90a";
+  color: rgb(128, 128, 128);
+}
+.gonicon-fog .path2:before {
+  content: "\e90b";
+  margin-left: -1.3076171875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-fog_cloud .path1:before {
+  content: "\e90c";
+  color: rgb(255, 0, 0);
+}
+.gonicon-fog_cloud .path2:before {
+  content: "\e90d";
+  margin-left: -1.123046875em;
+  color: rgb(128, 128, 128);
+}
+.gonicon-fog_cloud .path3:before {
+  content: "\e90e";
+  margin-left: -1.123046875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-fog_lightning .path1:before {
+  content: "\e90f";
+  color: rgb(255, 218, 0);
+}
+.gonicon-fog_lightning .path2:before {
+  content: "\e910";
+  margin-left: -1.11328125em;
+  color: rgb(128, 128, 128);
+}
+.gonicon-fog_lightning .path3:before {
+  content: "\e911";
+  margin-left: -1.11328125em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-fog_lightning .path4:before {
+  content: "\e912";
+  margin-left: -1.11328125em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-hail .path1:before {
+  content: "\e913";
+  color: rgb(128, 128, 128);
+}
+.gonicon-hail .path2:before {
+  content: "\e914";
+  margin-left: -1.14453125em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-hail_lightning .path1:before {
+  content: "\e915";
+  color: rgb(0, 189, 255);
+}
+.gonicon-hail_lightning .path2:before {
+  content: "\e916";
+  margin-left: -1.1015625em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-hail_lightning .path3:before {
+  content: "\e917";
+  margin-left: -1.1015625em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-hail_snow .path1:before {
+  content: "\e918";
+  color: rgb(0, 189, 255);
+}
+.gonicon-hail_snow .path2:before {
+  content: "\e919";
+  margin-left: -1.1240234375em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-heavy_cloud .path1:before {
+  content: "\e91a";
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_cloud .path2:before {
+  content: "\e91b";
+  margin-left: -1.65234375em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_cloud_wind .path1:before {
+  content: "\e91c";
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_cloud_wind .path2:before {
+  content: "\e91d";
+  margin-left: -2.240234375em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_cloud_wind_lightning .path1:before {
+  content: "\e91e";
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_cloud_wind_lightning .path2:before {
+  content: "\e91f";
+  margin-left: -1.6630859375em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_cloud_wind_lightning .path3:before {
+  content: "\e920";
+  margin-left: -1.6630859375em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-heavy_hail .path1:before {
+  content: "\e921";
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_hail .path2:before {
+  content: "\e922";
+  margin-left: -1.14453125em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_hail .path3:before {
+  content: "\e923";
+  margin-left: -1.14453125em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-heavy_rainy_lightning .path1:before {
+  content: "\e924";
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_rainy_lightning .path2:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_rainy_season .path1:before {
+  content: "\e926";
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_rainy_season .path2:before {
+  content: "\e927";
+  margin-left: -1.2421875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_snow .path1:before {
+  content: "\e928";
+  color: rgb(0, 189, 255);
+}
+.gonicon-heavy_snow .path2:before {
+  content: "\e929";
+  margin-left: -1.14453125em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-heavy_snow .path3:before {
+  content: "\e92a";
+  margin-left: -1.14453125em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-lightning_hail .path1:before {
+  content: "\e92b";
+  color: rgb(255, 0, 0);
+}
+.gonicon-lightning_hail .path2:before {
+  content: "\e92c";
+  margin-left: -1.232421875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-lightning_hail .path3:before {
+  content: "\e92d";
+  margin-left: -1.232421875em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-lightning_hail .path4:before {
+  content: "\e92e";
+  margin-left: -1.232421875em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-lightning_rainy .path1:before {
+  content: "\e92f";
+  color: rgb(255, 0, 0);
+}
+.gonicon-lightning_rainy .path2:before {
+  content: "\e930";
+  margin-left: -1.2080078125em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-lightning_rainy .path3:before {
+  content: "\e931";
+  margin-left: -1.2080078125em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-lightning_snow .path1:before {
+  content: "\e932";
+  color: rgb(255, 0, 0);
+}
+.gonicon-lightning_snow .path2:before {
+  content: "\e933";
+  margin-left: -1.232421875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-lightning_snow .path3:before {
+  content: "\e934";
+  margin-left: -1.232421875em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-lightning_snow .path4:before {
+  content: "\e935";
+  margin-left: -1.232421875em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-rainy:before {
+  content: "\e936";
+  color: #00bdff;
+}
+.gonicon-rainy_cloud .path1:before {
+  content: "\e937";
+  color: rgb(255, 0, 0);
+}
+.gonicon-rainy_cloud .path2:before {
+  content: "\e938";
+  margin-left: -1.2197265625em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-rainy_lightning .path1:before {
+  content: "\e939";
+  color: rgb(0, 189, 255);
+}
+.gonicon-rainy_lightning .path2:before {
+  content: "\e93a";
+  margin-left: -1.1015625em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-rainy_season .path1:before {
+  content: "\e93b";
+  color: rgb(128, 128, 128);
+}
+.gonicon-rainy_season .path2:before {
+  content: "\e93c";
+  margin-left: -1.0830078125em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-rainy_snow:before {
+  content: "\e93d";
+  color: #00bdff;
+}
+.gonicon-shower .path1:before {
+  content: "\e93e";
+  color: rgb(0, 189, 255);
+}
+.gonicon-shower .path2:before {
+  content: "\e93f";
+  margin-left: -1.091796875em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-shower .path3:before {
+  content: "\e940";
+  margin-left: -1.091796875em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-sno_cloud .path1:before {
+  content: "\e941";
+  color: rgb(0, 189, 255);
+}
+.gonicon-sno_cloud .path2:before {
+  content: "\e942";
+  margin-left: -1.1240234375em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-snow .path1:before {
+  content: "\e943";
+  color: rgb(128, 128, 128);
+}
+.gonicon-snow .path2:before {
+  content: "\e944";
+  margin-left: -1.1337890625em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-snow_lightning .path1:before {
+  content: "\e945";
+  color: rgb(0, 189, 255);
+}
+.gonicon-snow_lightning .path2:before {
+  content: "\e946";
+  margin-left: -1.0927734375em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-snow_lightning .path3:before {
+  content: "\e947";
+  margin-left: -1.0927734375em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-sun:before {
+  content: "\e948";
+  color: #f00;
+}
+.gonicon-sun_cloud .path1:before {
+  content: "\e949";
+  color: rgb(255, 0, 0);
+}
+.gonicon-sun_cloud .path2:before {
+  content: "\e94a";
+  margin-left: -1.546875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sun_fog_cloud .path1:before {
+  content: "\e94b";
+  color: rgb(255, 218, 0);
+}
+.gonicon-sun_fog_cloud .path2:before {
+  content: "\e94c";
+  margin-left: -1.123046875em;
+  color: rgb(128, 128, 128);
+}
+.gonicon-sun_fog_cloud .path3:before {
+  content: "\e94d";
+  margin-left: -1.123046875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sun_lightning_cloud .path1:before {
+  content: "\e94e";
+  color: rgb(255, 0, 0);
+}
+.gonicon-sun_lightning_cloud .path2:before {
+  content: "\e94f";
+  margin-left: -1.232421875em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sun_lightning_cloud .path3:before {
+  content: "\e950";
+  margin-left: -1.232421875em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-sunny:before {
+  content: "\e951";
+  color: #f00;
+}
+.gonicon-sunny_cloud .path1:before {
+  content: "\e952";
+  color: rgb(255, 0, 0);
+}
+.gonicon-sunny_cloud .path2:before {
+  content: "\e953";
+  margin-left: -1.5712890625em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sunny_wind_lightning1 .path1:before {
+  content: "\e954";
+  color: rgb(255, 0, 0);
+}
+.gonicon-sunny_wind_lightning1 .path2:before {
+  content: "\e955";
+  margin-left: -1.6484375em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-sunny_wind_lightning1 .path3:before {
+  content: "\e956";
+  margin-left: -1.6484375em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sunny_wind_lightning1 .path4:before {
+  content: "\e957";
+  margin-left: -1.6484375em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-sunny_wind_lightning2 .path1:before {
+  content: "\e958";
+  color: rgb(255, 0, 0);
+}
+.gonicon-sunny_wind_lightning2 .path2:before {
+  content: "\e959";
+  margin-left: -1.6484375em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sunny_wind_lightning2 .path3:before {
+  content: "\e95a";
+  margin-left: -1.6484375em;
+  color: rgb(0, 189, 255);
+}
+.gonicon-sunny_wind_lightning2 .path4:before {
+  content: "\e95b";
+  margin-left: -1.6484375em;
+  color: rgb(255, 218, 0);
+}
+.gonicon-sunshine:before {
+  content: "\e95c";
+  color: #f00;
+}
+.gonicon-sunshine_cloud .path1:before {
+  content: "\e95d";
+  color: rgb(0, 189, 255);
+}
+.gonicon-sunshine_cloud .path2:before {
+  content: "\e95e";
+  margin-left: -1.9794921875em;
+  color: rgb(255, 0, 0);
+}
+.gonicon-typhoon .path1:before {
+  content: "\e95f";
+  color: rgb(0, 189, 255);
+}
+.gonicon-typhoon .path2:before {
+  content: "\e960";
+  margin-left: -1.03515625em;
+  color: rgb(128, 128, 128);
+}
+.gonicon-typhoon .path3:before {
+  content: "\e961";
+  margin-left: -1.03515625em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-typhoon_fog .path1:before {
+  content: "\e962";
+  color: rgb(128, 128, 128);
+}
+.gonicon-typhoon_fog .path2:before {
+  content: "\e963";
+  margin-left: -1.1337890625em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-typhoon_fog .path3:before {
+  content: "\e964";
+  margin-left: -1.1337890625em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-typhoon_hail .path1:before {
+  content: "\e965";
+  color: rgb(128, 128, 128);
+}
+.gonicon-typhoon_hail .path2:before {
+  content: "\e966";
+  margin-left: -1.1337890625em;
+  color: rgb(159, 230, 255);
+}
+.gonicon-typhoon_hail .path3:before {
+  content: "\e967";
+  margin-left: -1.1337890625em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-typhoon_lightning:before {
+  content: "\e968";
+  color: #008cff;
+}
+.gonicon-typhoon_rainy .path1:before {
+  content: "\e969";
+  color: rgb(0, 189, 255);
+}
+.gonicon-typhoon_rainy .path2:before {
+  content: "\e96a";
+  margin-left: -1.0830078125em;
+  color: rgb(0, 140, 255);
+}
+.gonicon-wind:before {
+  content: "\e96b";
+  color: #00bdff;
+}
+.gonicon-wind_lightning .path1:before {
+  content: "\e96c";
+  color: rgb(255, 218, 0);
+}
+.gonicon-wind_lightning .path2:before {
+  content: "\e96d";
+  margin-left: -0.6767578125em;
+  color: rgb(0, 140, 255);
+}
