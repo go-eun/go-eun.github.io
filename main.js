@@ -111,12 +111,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
 /* harmony import */ var _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./uiBox/carousel/carousel */ "./src/app/uiBox/carousel/carousel.ts");
 /* harmony import */ var _pages_list_guide_component_guide_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/list/guide-component/guide-component */ "./src/app/pages/list/guide-component/guide-component.ts");
+/* harmony import */ var _pages_list_detail_component_detail_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/list/detail-component/detail-component */ "./src/app/pages/list/detail-component/detail-component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -140,6 +142,7 @@ var AppModule = /** @class */ (function () {
                 _pages_list_list__WEBPACK_IMPORTED_MODULE_6__["ListPage"],
                 _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_7__["ListMenuComponent"],
                 _pages_list_guide_component_guide_component__WEBPACK_IMPORTED_MODULE_11__["GuideComponent"],
+                _pages_list_detail_component_detail_component__WEBPACK_IMPORTED_MODULE_12__["DetailComponent"],
                 // ui
                 _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_8__["CloseButtonUi"],
                 _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_10__["CarouselUi"]
@@ -211,6 +214,286 @@ var AppRoutingModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/icons.ts":
+/*!**************************!*\
+  !*** ./src/app/icons.ts ***!
+  \**************************/
+/*! exports provided: icons */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "icons", function() { return icons; });
+var ICONS = /** @class */ (function () {
+    function ICONS() {
+        this.icons = {
+            "weather": {
+                "fill": [
+                    "gonicon-sun",
+                    "gonicon-sunny",
+                    "gonicon-sunshine",
+                    "gonicon-cloud",
+                    "gonicon-sun_cloud",
+                    "gonicon-sunny_cloud",
+                    "gonicon-sunshine_cloud",
+                    "gonicon-rainy_cloud",
+                    "gonicon-sun_lightning_cloud",
+                    "gonicon-lightning_rainy",
+                    "gonicon-lightning_snow",
+                    "gonicon-lightning_hail",
+                    "gonicon-fog_cloud",
+                    "gonicon-sun_fog_cloud",
+                    "gonicon-fog_lightning",
+                    "gonicon-cumulus_cloud",
+                    "gonicon-snow_cloud",
+                    "gonicon-hail_snow",
+                    "gonicon-snow",
+                    "gonicon-hail",
+                    "gonicon-fog",
+                    "gonicon-rainy",
+                    "gonicon-rainy_snow",
+                    "gonicon-heavy_snow",
+                    "gonicon-heavy_hail",
+                    "gonicon-heavy_cloud",
+                    "gonicon-dark_cloud",
+                    "gonicon-snow_lightning",
+                    "gonicon-hail_lightning",
+                    "gonicon-rainy_lightning",
+                    "gonicon-dark_cloud_lightning",
+                    "gonicon-rainy_season",
+                    "gonicon-heavy_rainy_season",
+                    "gonicon-heavy_rainy_lightning",
+                    "gonicon-shower",
+                    "gonicon-typhoon_rainy",
+                    "gonicon-typhoon_hail",
+                    "gonicon-typhoon_fog",
+                    "gonicon-typhoon",
+                    "gonicon-typhoon_lightning",
+                    "gonicon-wind_lightning",
+                    "gonicon-sunny_wind_lightning1",
+                    "gonicon-cloud_wind_lightning",
+                    "gonicon-heavy_cloud_wind_lightning",
+                    "gonicon-sunny_wind_lightning2",
+                    "gonicon-wind",
+                    "gonicon-cloud_wind",
+                    "gonicon-heavy_cloud_wind"
+                ],
+                "line": [
+                    "gonicon-sun",
+                    "gonicon-sunny",
+                    "gonicon-sunshine",
+                    "gonicon-cloud",
+                    "gonicon-sun_cloud",
+                    "gonicon-sunny_cloud",
+                    "gonicon-sunshine_cloud",
+                    "gonicon-rainy_cloud",
+                    "gonicon-sun_lightning_cloud",
+                    "gonicon-lightning_rainy",
+                    "gonicon-lightning_snow",
+                    "gonicon-lightning_hail",
+                    "gonicon-fog_cloud",
+                    "gonicon-sun_fog_cloud",
+                    "gonicon-fog_lightning",
+                    "gonicon-cumulus_cloud",
+                    "gonicon-snow_cloud",
+                    "gonicon-hail_snow",
+                    "gonicon-snow",
+                    "gonicon-hail",
+                    "gonicon-fog",
+                    "gonicon-rainy",
+                    "gonicon-rainy_snow",
+                    "gonicon-heavy_snow",
+                    "gonicon-heavy_hail",
+                    "gonicon-heavy_cloud",
+                    "gonicon-dark_cloud",
+                    "gonicon-snow_lightning",
+                    "gonicon-hail_lightning",
+                    "gonicon-rainy_lightning",
+                    "gonicon-dark_cloud_lightning",
+                    "gonicon-rainy_season",
+                    "gonicon-heavy_rainy_season",
+                    "gonicon-heavy_rainy_lightning",
+                    "gonicon-shower",
+                    "gonicon-typhoon_rainy",
+                    "gonicon-typhoon_hail",
+                    "gonicon-typhoon_fog",
+                    "gonicon-typhoon",
+                    "gonicon-typhoon_lightning",
+                    "gonicon-wind_lightning",
+                    "gonicon-sunny_wind_lightning1",
+                    "gonicon-cloud_wind_lightning",
+                    "gonicon-heavy_cloud_wind_lightning",
+                    "gonicon-sunny_wind_lightning2",
+                    "gonicon-wind",
+                    "gonicon-cloud_wind",
+                    "gonicon-heavy_cloud_wind"
+                ],
+                "color": [
+                    "gonicon-sun",
+                    "gonicon-sunny",
+                    "gonicon-sunshine",
+                    "gonicon-cloud",
+                    "gonicon-sun_cloud",
+                    "gonicon-sunny_cloud",
+                    "gonicon-sunshine_cloud",
+                    "gonicon-rainy_cloud",
+                    "gonicon-sun_lightning_cloud",
+                    "gonicon-lightning_rainy",
+                    "gonicon-lightning_snow",
+                    "gonicon-lightning_hail",
+                    "gonicon-fog_cloud",
+                    "gonicon-sun_fog_cloud",
+                    "gonicon-fog_lightning",
+                    "gonicon-cumulus_cloud",
+                    "gonicon-snow_cloud",
+                    "gonicon-hail_snow",
+                    "gonicon-snow",
+                    "gonicon-hail",
+                    "gonicon-fog",
+                    "gonicon-rainy",
+                    "gonicon-rainy_snow",
+                    "gonicon-heavy_snow",
+                    "gonicon-heavy_hail",
+                    "gonicon-heavy_cloud",
+                    "gonicon-dark_cloud",
+                    "gonicon-snow_lightning",
+                    "gonicon-hail_lightning",
+                    "gonicon-rainy_lightning",
+                    "gonicon-dark_cloud_lightning",
+                    "gonicon-rainy_season",
+                    "gonicon-heavy_rainy_season",
+                    "gonicon-heavy_rainy_lightning",
+                    "gonicon-shower",
+                    "gonicon-typhoon_rainy",
+                    "gonicon-typhoon_hail",
+                    "gonicon-typhoon_fog",
+                    "gonicon-typhoon",
+                    "gonicon-typhoon_lightning",
+                    "gonicon-wind_lightning",
+                    "gonicon-sunny_wind_lightning1",
+                    "gonicon-cloud_wind_lightning",
+                    "gonicon-heavy_cloud_wind_lightning",
+                    "gonicon-sunny_wind_lightning2",
+                    "gonicon-wind",
+                    "gonicon-cloud_wind",
+                    "gonicon-heavy_cloud_wind"
+                ]
+            }
+        };
+    }
+    return ICONS;
+}());
+var icons = new ICONS().icons;
+
+
+/***/ }),
+
+/***/ "./src/app/pages/list/detail-component/detail-component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/pages/list/detail-component/detail-component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"detail-component-content enter\" #content>\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\" \r\n      (click)=\"dismiss()\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"detail-header-wrapper\">\r\n      <div class=\"style-list\">\r\n        <div class=\"style-item\">\r\n          <div class=\"icon gonicon-weather-color gonicon-sun_cloud\"></div>\r\n          <div class=\"label\">Color</div>\r\n        </div>\r\n  \r\n        <div class=\"style-item\">\r\n          <div class=\"icon gonicon-weather-fill gonicon-sun_cloud\"></div>\r\n          <div class=\"label\">Fill</div>\r\n        </div>\r\n  \r\n        <div class=\"style-item\">\r\n          <div class=\"icon gonicon-weather-line gonicon-sun_cloud\"></div>\r\n          <div class=\"label\">Stroke</div>\r\n        </div>\r\n      </div>\r\n  \r\n      <div class=\"detail-main\">\r\n        <div class=\"icon gonicon-weather-fill gonicon-sun_cloud\"></div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"info-wrapper\">\r\n      <div class=\"info-label\">\r\n        sunny_cloud\r\n      </div>\r\n      <div class=\"setup-panel\">\r\n        <div class=\"link-box\">\r\n          &lt;<span class=\"bluesky\">i</span> <span class=\"pink\"> class</span>=&quot;gonicon-weather gonicon-sun_cloud&quot;&gt;&lt;<span class=\"bluesky\">/i</span>&gt;\r\n        </div>\r\n        <!-- <div class=\"link-box\">\r\n          &lt;<span class=\"bluesky\">i</span> <span class=\"pink\"> class</span>=&quot;gonicon-weather gonicon-sun_cloud&quot;&gt;&lt;<span class=\"bluesky\">/i</span>&gt;\r\n        </div> -->\r\n        <div class=\"image-box\">\r\n          <img src=\"assets/img/copy-icon.svg\">\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"palette-wrapper\">\r\n      <div class=\"item-row\">\r\n        <div \r\n          class=\"color-item\" \r\n          [style.border-color]=\"color\" \r\n          *ngFor=\"let color of colors1\">\r\n        </div>\r\n      </div>\r\n      <div class=\"item-row\">\r\n        <div \r\n          class=\"color-item\" \r\n          [style.border-color]=\"color\" \r\n          *ngFor=\"let color of colors2\">\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/list/detail-component/detail-component.scss":
+/*!*******************************************************************!*\
+  !*** ./src/app/pages/list/detail-component/detail-component.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes setup-link-start {\n  0% {\n    opacity: 0;\n    width: 0vw; }\n  50% {\n    opacity: 0;\n    width: 59.4vw; }\n  100% {\n    opacity: 1;\n    width: 59.4vw; } }\n\n@keyframes setup-link-start {\n  0% {\n    opacity: 0;\n    width: 0vw; }\n  50% {\n    opacity: 0;\n    width: 59.4vw; }\n  100% {\n    opacity: 1;\n    width: 59.4vw; } }\n\n@-webkit-keyframes detail-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: white; } }\n\n@keyframes detail-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: white; } }\n\n.detail-component-content {\n  height: 100%;\n  width: 100%;\n  z-index: 990;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.detail-component-content.enter {\n    -webkit-animation: detail-fade-in 1s;\n            animation: detail-fade-in 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.detail-component-content.leave {\n    -webkit-animation: fade-out 0.5s;\n            animation: fade-out 0.5s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n\n.detail-component-content .component-wrapper {\n    width: 100%;\n    height: 100%;\n    min-height: 177.5vw;\n    position: relative;\n    padding: 10.6vw; }\n\n.detail-component-content .component-wrapper .close-box-outer {\n      position: absolute;\n      top: 10.6vw;\n      right: 10.6vw;\n      width: 10.6vw;\n      height: 10.6vw;\n      z-index: 999; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper {\n      overflow: hidden;\n      position: relative;\n      margin-bottom: 16.9vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list {\n        width: 15vw;\n        float: left; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item {\n          margin-bottom: 6.3vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item .icon {\n            width: 15vw;\n            height: 9.4vw;\n            font-size: 9.4vw;\n            margin-bottom: 2.8vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item .label {\n            font-size: 3.4vw;\n            color: #4a4a4a;\n            text-align: center; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .detail-main {\n        font-size: 24.4vw;\n        display: inline-block;\n        position: absolute;\n        bottom: 0;\n        right: 0; }\n\n.detail-component-content .component-wrapper .info-wrapper {\n      margin-bottom: 9.4vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .info-label {\n        font-size: 8.1vw;\n        text-align: right;\n        color: #4a4a4a;\n        margin-bottom: 5vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel {\n        border: 1px solid #d9d9d9;\n        padding: 3.1vw;\n        width: 100%;\n        position: relative; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box {\n          display: inline-block;\n          width: calc(100% - 9.4vw);\n          font-size: 4.1vw;\n          line-height: 1.5em;\n          word-break: break-all; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box .bluesky {\n            color: #4abde5; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box .pink {\n            color: #ff9cce; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .image-box {\n          display: inline-block;\n          width: 9.4vw;\n          min-height: 4.1vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .image-box img {\n            position: absolute;\n            right: 3.1vw;\n            width: 5.6vw; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row {\n      width: 100%;\n      text-align: center; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row:first-child {\n        margin-bottom: 4.1vw; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item {\n        display: inline-block;\n        width: 12.5vw;\n        height: 12.5vw;\n        border-radius: 50%;\n        margin: 0 2vw;\n        border: 1px solid #ffffff; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item:first-child {\n          margin-left: 0; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item:last-child {\n          margin-right: 0; }\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/list/detail-component/detail-component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/pages/list/detail-component/detail-component.ts ***!
+  \*****************************************************************/
+/*! exports provided: DetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetailComponent", function() { return DetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var DetailComponent = /** @class */ (function () {
+    function DetailComponent(router, renderer) {
+        this.router = router;
+        this.renderer = renderer;
+        this.closeEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.colors1 = [
+            "#fe3f65",
+            "#ffb645",
+            "#fff289",
+            "#a9e270",
+            "#79a14b"
+        ];
+        this.colors2 = [
+            "#37b8dd",
+            "#5459eb",
+            "#cf67ff",
+            "#9b9b9b",
+            "#000000"
+        ];
+    }
+    DetailComponent.prototype.ngOnInit = function () { };
+    DetailComponent.prototype.ngAfterViewInit = function () { };
+    DetailComponent.prototype.dismiss = function () {
+        var _this = this;
+        console.log("dis miss");
+        rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].of(1)
+            .do(function () {
+            _this.content.nativeElement.classList.remove('enter');
+            _this.content.nativeElement.classList.add('leave');
+        })
+            .delay(500)
+            .subscribe(function () {
+            _this.closeEvent.emit();
+        });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], DetailComponent.prototype, "closeEvent", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('content'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], DetailComponent.prototype, "content", void 0);
+    DetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'detail-component',
+            template: __webpack_require__(/*! ./detail-component.html */ "./src/app/pages/list/detail-component/detail-component.html"),
+            styles: [__webpack_require__(/*! ./detail-component.scss */ "./src/app/pages/list/detail-component/detail-component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], DetailComponent);
+    return DetailComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/list/guide-component/guide-component.html":
 /*!*****************************************************************!*\
   !*** ./src/app/pages/list/guide-component/guide-component.html ***!
@@ -218,7 +501,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"guide-component-content enter\" #content>\r\n    <div class=\"component-wrapper\">\r\n  \r\n      <div class=\"close-box-outer\" \r\n        (click)=\"dismiss()\">\r\n        <close-button></close-button>\r\n      </div>\r\n  \r\n      <div class=\"setup-wrapper\">\r\n        <div class=\"label\">설치방법 :</div>\r\n    \r\n        <div class=\"setup-link-panel\">\r\n          <div class=\"front-quotation\">\r\n              <span>&#8220;</span>\r\n          </div>\r\n          <div class=\"setup-link\">\r\n            &lt;<span class=\"bluesky\">link</span> <span class=\"pink\"> href</span>=&quot;https://go-eun.github.io/<br>gonicon.css&quot; <span class=\"pink\">rel</span>=<span class=\"bluesky\">&quot;stylesheet&quot;</span>&gt;\r\n            <div class=\"temp-box\"></div>\r\n          </div>\r\n          <div class=\"back-quotation\">\r\n            <span>&#8221;</span>\r\n          </div>\r\n        </div>\r\n    \r\n      </div>\r\n      \r\n      <div class=\"email\">kge17419@gmail.com</div>\r\n      <img class=\"logo\" src=\"assets/img/list-menu-logo.svg\">\r\n  \r\n    </div>\r\n  </div>"
+module.exports = "<div class=\"guide-component-content enter\" #content>\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\" \r\n      (click)=\"dismiss()\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"setup-wrapper\">\r\n      <div class=\"label\">설치방법 :</div>\r\n  \r\n      <div class=\"setup-link-panel\">\r\n        <div class=\"front-quotation\">\r\n            <span>&#8220;</span>\r\n        </div>\r\n        <div class=\"setup-link\">\r\n          &lt;<span class=\"bluesky\">link</span> <span class=\"pink\"> href</span>=&quot;https://go-eun.github.io/<br>gonicon.css&quot; <span class=\"pink\">rel</span>=<span class=\"bluesky\">&quot;stylesheet&quot;</span>&gt;\r\n          <div class=\"temp-box\"></div>\r\n        </div>\r\n        <div class=\"back-quotation\">\r\n          <span>&#8221;</span>\r\n        </div>\r\n      </div>\r\n  \r\n    </div>\r\n    \r\n    <div class=\"email\">kge17419@gmail.com</div>\r\n    <img class=\"logo\" src=\"assets/img/list-menu-logo.svg\">\r\n\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -469,7 +752,7 @@ var ListMenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (closeEvent)=\"menuClose($event)\"></list-menu-component>\r\n\r\n<guide-component\r\n  *ngIf=\"guideState\"\r\n  (closeEvent)=\"guideClose($event)\"></guide-component>\r\n\r\n<div class=\"content\" [ngClass]=\"{'hold': contentState, 'out':!contentState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <div \r\n      class=\"guide-icon-wrapper\"\r\n      (click)=\"guideOpen($event)\">\r\n      <div class=\"inner-wrapper\">\r\n        <img class=\"guide-circle\" src=\"assets/img/list-circle.svg\">\r\n        <img class=\"guide-arrow\" src=\"assets/img/list-down-arrow.svg\">\r\n      </div>\r\n    </div>\r\n    <img \r\n      class=\"search-icon\" \r\n      src=\"assets/img/list-search-icon.svg\">\r\n    <img \r\n      class=\"menu-icon\" \r\n      (click)=\"menuOpen($event)\" \r\n      src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        01\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" #nameB>B</strong>\r\n        <span class=\"fadeIn\" #nameSky>lue sky</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img \r\n      #weatherLogo\r\n      class=\"weather-logo fadeInRight\" \r\n      src=\"assets/img/weather-logo.svg\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      오늘의 날씨를 한눈에 인지하기 쉬운 정사각<br>\r\n      형의 픽셀형태로 제작하였습니다. ‘ 해, 구름,<br> \r\n      번개, 태풍등.. ’ 하나의 주제가 되는 날씨에<br> \r\n      각각의 색을 부여하여 의미를 더하였습니다.\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun\"></div>\r\n      <div class=\"name\">sun</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny\"></div>\r\n      <div class=\"name\">sunny</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunshine\"></div>\r\n      <div class=\"name\">sunshine</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud\"></div>\r\n      <div class=\"name\">cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_cloud\"></div>\r\n      <div class=\"name\">sun_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_cloud\"></div>\r\n      <div class=\"name\">sunny_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunshine_cloud\"></div>\r\n      <div class=\"name\">sunshine_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_cloud\"></div>\r\n      <div class=\"name\">rainy_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_lightning_cloud\"></div>\r\n      <div class=\"name\">sun_lightning_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_rainy\"></div>\r\n      <div class=\"name\">lightning_rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_snow\"></div>\r\n      <div class=\"name\">lightning_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-lightning_hail\"></div>\r\n      <div class=\"name\">lightning_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog_cloud\"></div>\r\n      <div class=\"name\">fog_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sun_fog_cloud\"></div>\r\n      <div class=\"name\">sun_fog_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog_lightning\"></div>\r\n      <div class=\"name\">fog_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cumulus_cloud\"></div>\r\n      <div class=\"name\">cumulus_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow_cloud\"></div>\r\n      <div class=\"name\">snow_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail_snow\"></div>\r\n      <div class=\"name\">hail_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow\"></div>\r\n      <div class=\"name\">snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail\"></div>\r\n      <div class=\"name\">hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-fog\"></div>\r\n      <div class=\"name\">fog</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy\"></div>\r\n      <div class=\"name\">rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_snow\"></div>\r\n      <div class=\"name\">rainy_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_snow\"></div>\r\n      <div class=\"name\">heavy_snow</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_hail\"></div>\r\n      <div class=\"name\">heavy_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud\"></div>\r\n      <div class=\"name\">heavy_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-dark_cloud\"></div>\r\n      <div class=\"name\">dark_cloud</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-snow_lightning\"></div>\r\n      <div class=\"name\">snow_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-hail_lightning\"></div>\r\n      <div class=\"name\">hail_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_lightning\"></div>\r\n      <div class=\"name\">rainy_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-dark_cloud_lightning\"></div>\r\n      <div class=\"name\">dark_cloud_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-rainy_season\"></div>\r\n      <div class=\"name\">rainy_season</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_rainy_season\"></div>\r\n      <div class=\"name\">heavy_rainy_season</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_rainy_lightning\"></div>\r\n      <div class=\"name\">heavy_rainy_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-shower\"></div>\r\n      <div class=\"name\">shower</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_rainy\"></div>\r\n      <div class=\"name\">typhoon_rainy</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_hail\"></div>\r\n      <div class=\"name\">typhoon_hail</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_fog\"></div>\r\n      <div class=\"name\">typhoon_fog</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon\"></div>\r\n      <div class=\"name\">typhoon</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-typhoon_lightning\"></div>\r\n      <div class=\"name\">typhoon_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-wind_lightning\"></div>\r\n      <div class=\"name\">wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_wind_lightning1\"></div>\r\n      <div class=\"name\">sunny_wind_lightning1</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud_wind_lightning\"></div>\r\n      <div class=\"name\">cloud_wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud_wind_lightning\"></div>\r\n      <div class=\"name\">heavy_cloud_wind_lightning</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-sunny_wind_lightning2\"></div>\r\n      <div class=\"name\">sunny_wind_lightning2</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-wind\"></div>\r\n      <div class=\"name\">wind</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-cloud_wind\"></div>\r\n      <div class=\"name\">cloud_wind</div>\r\n    </div>\r\n    <div class=\"item-wrapper\">\r\n      <div class=\"icon gonicon-weather gonicon-heavy_cloud_wind\"></div>\r\n      <div class=\"name\">heavy_cloud_wind</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
+module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (closeEvent)=\"menuClose($event)\"></list-menu-component>\r\n\r\n<guide-component\r\n  *ngIf=\"guideState\"\r\n  (closeEvent)=\"guideClose($event)\"></guide-component>\r\n\r\n<detail-component\r\n  *ngIf=\"detailState\"\r\n  (closeEvent)=\"detailClose($event)\"></detail-component>\r\n\r\n<div class=\"content\" [ngClass]=\"{'hold': contentState, 'out':!contentState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <div \r\n      class=\"guide-icon-wrapper\"\r\n      (click)=\"guideOpen($event)\">\r\n      <div class=\"inner-wrapper\">\r\n        <img class=\"guide-circle\" src=\"assets/img/list-circle.svg\">\r\n        <img class=\"guide-arrow\" src=\"assets/img/list-down-arrow.svg\">\r\n      </div>\r\n    </div>\r\n    <img \r\n      class=\"search-icon\" \r\n      src=\"assets/img/list-search-icon.svg\">\r\n    <img \r\n      class=\"menu-icon\" \r\n      (click)=\"menuOpen($event)\" \r\n      src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        01\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" #nameB>B</strong>\r\n        <span class=\"fadeIn\" #nameSky>lue sky</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img \r\n      #weatherLogo\r\n      class=\"weather-logo fadeInRight\" \r\n      src=\"assets/img/weather-logo.svg\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      오늘의 날씨를 한눈에 인지하기 쉬운 정사각<br>\r\n      형의 픽셀형태로 제작하였습니다. ‘ 해, 구름,<br> \r\n      번개, 태풍등.. ’ 하나의 주제가 되는 날씨에<br> \r\n      각각의 색을 부여하여 의미를 더하였습니다.\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\" \r\n      (click)=\"detailOpen()\" \r\n      *ngFor=\"let icon of activeIcon.list\">\r\n      <div class=\"icon {{activeIcon.name}} {{icon}}\"></div>\r\n      <div class=\"name\">sun</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
 
 /***/ }),
 
@@ -496,6 +779,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListPage", function() { return ListPage; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../icons */ "./src/app/icons.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -507,6 +791,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var ListPage = /** @class */ (function () {
     function ListPage(router, renderer) {
         this.router = router;
@@ -514,8 +799,22 @@ var ListPage = /** @class */ (function () {
         this.contentState = false;
         this.menuState = false;
         this.guideState = false;
+        this.detailState = false;
+        // detailState = true;
+        // contentState = true;
+        this.activeIcon = {
+            name: "",
+            list: []
+        };
+        console.log("icons test :: ", _icons__WEBPACK_IMPORTED_MODULE_2__["icons"]);
     }
-    ListPage.prototype.ngOnInit = function () { };
+    ListPage.prototype.ngOnInit = function () {
+        this.changeActiveIcon("weather", "fill");
+    };
+    ListPage.prototype.changeActiveIcon = function (name, thema) {
+        this.activeIcon.name = "gonicon-" + name + "-" + thema;
+        this.activeIcon.list = _icons__WEBPACK_IMPORTED_MODULE_2__["icons"][name][thema];
+    };
     ListPage.prototype.ngAfterViewInit = function () {
         this.renderer.addClass(this.bigNumber.nativeElement, 'animated');
         this.renderer.addClass(this.weatherLogo.nativeElement, 'animated');
@@ -537,6 +836,14 @@ var ListPage = /** @class */ (function () {
     };
     ListPage.prototype.guideClose = function () {
         this.guideState = false;
+        this.contentState = false;
+    };
+    ListPage.prototype.detailOpen = function () {
+        this.detailState = true;
+        this.contentState = true;
+    };
+    ListPage.prototype.detailClose = function () {
+        this.detailState = false;
         this.contentState = false;
     };
     __decorate([
@@ -582,7 +889,7 @@ var ListPage = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\" #content>\r\n  <button type=\"button\" #startButton>\r\n     시작하기\r\n  </button>\r\n</div>"
+module.exports = "<div class=\"content\" #content>\r\n\r\n  <div class=\"button-wrapper\" #buttonWrapper>\r\n    <div class=\"button-inner-wrapper\">\r\n      <div class=\"dot\" #dot></div>\r\n      <button type=\"button\" #startButton>\r\n        <span>시작하기</span>\r\n        <img src=\"assets/img/main-right-arrow.svg\">\r\n      </button>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -593,7 +900,7 @@ module.exports = "<div class=\"content\" #content>\r\n  <button type=\"button\" 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0.6;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0.6;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n.content {\n  height: 100%;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  position: relative; }\n\n.content.blur {\n    -webkit-animation-name: blur-in-effect;\n            animation-name: blur-in-effect;\n    -webkit-animation-duration: 1.5s;\n            animation-duration: 1.5s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-delay: 1s;\n    animation-delay: 1s; }\n\n.content button {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw !important;\n    width: 47.5vw;\n    height: 16.9vw;\n    margin: 0 auto;\n    background-color: #fff5fa;\n    color: #ea0076;\n    border: 0;\n    border-radius: 8.4vw;\n    font-weight: 600;\n    font-size: 5.3vw; }\n\n.content button:focus {\n    outline: none; }\n"
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@-webkit-keyframes start-effect {\n  0% {\n    border: 2.5px solid rgba(234, 0, 118, 0); }\n  100% {\n    border: 2.5px solid #ea0076; } }\n\n@keyframes start-effect {\n  0% {\n    border: 2.5px solid rgba(234, 0, 118, 0); }\n  100% {\n    border: 2.5px solid #ea0076; } }\n\n@-webkit-keyframes dot-effect {\n  0% {\n    background-color: rgba(74, 189, 229, 0); }\n  100% {\n    background-color: #4abde5; } }\n\n@keyframes dot-effect {\n  0% {\n    background-color: rgba(74, 189, 229, 0); }\n  100% {\n    background-color: #4abde5; } }\n\n@-webkit-keyframes span-effect {\n  0% {\n    width: 21.9vw; }\n  100% {\n    width: 0vw; } }\n\n@keyframes span-effect {\n  0% {\n    width: 21.9vw; }\n  100% {\n    width: 0vw; } }\n\n@-webkit-keyframes img-effect {\n  0% {\n    left: 0;\n    margin-left: 0; }\n  20% {\n    left: -0.6vw;\n    margin-left: 0; }\n  60% {\n    left: -0.6vw;\n    margin-left: 0; }\n  99% {\n    left: 100vw;\n    opacity: 1; }\n  100% {\n    left: 100vw;\n    opacity: 0; } }\n\n@keyframes img-effect {\n  0% {\n    left: 0;\n    margin-left: 0; }\n  20% {\n    left: -0.6vw;\n    margin-left: 0; }\n  60% {\n    left: -0.6vw;\n    margin-left: 0; }\n  99% {\n    left: 100vw;\n    opacity: 1; }\n  100% {\n    left: 100vw;\n    opacity: 0; } }\n\n@-webkit-keyframes wrapper-effect {\n  0% {\n    left: 50%;\n    margin-left: -23.8vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 47.5vw; }\n  20% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  40% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  100% {\n    -webkit-transform: rotate(720deg);\n            transform: rotate(720deg);\n    width: 16.9vw;\n    left: 100%;\n    margin-left: 0px; } }\n\n@keyframes wrapper-effect {\n  0% {\n    left: 50%;\n    margin-left: -23.8vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 47.5vw; }\n  20% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  40% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  100% {\n    -webkit-transform: rotate(720deg);\n            transform: rotate(720deg);\n    width: 16.9vw;\n    left: 100%;\n    margin-left: 0px; } }\n\n.content {\n  height: 100%;\n  min-height: 177.5vw;\n  overflow: hidden;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  position: relative; }\n\n.content.blur {\n    -webkit-animation-name: blur-in-effect;\n            animation-name: blur-in-effect;\n    -webkit-animation-duration: 1s;\n            animation-duration: 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-delay: 4.5s;\n    animation-delay: 4.5s; }\n\n.content .button-wrapper {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw;\n    width: 47.5vw;\n    height: 16.9vw; }\n\n.content .button-wrapper.start {\n      -webkit-animation-name: wrapper-effect;\n              animation-name: wrapper-effect;\n      -webkit-animation-duration: 3s;\n              animation-duration: 3s;\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s; }\n\n.content .button-wrapper.start .button-inner-wrapper .dot {\n        -webkit-animation-name: dot-effect;\n                animation-name: dot-effect;\n        -webkit-animation-duration: 1.5s;\n                animation-duration: 1.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .button-wrapper.start .button-inner-wrapper button {\n        -webkit-animation-name: start-effect;\n                animation-name: start-effect;\n        -webkit-animation-duration: 1.5s;\n                animation-duration: 1.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .button-wrapper.start .button-inner-wrapper button span {\n          -webkit-animation-name: span-effect;\n                  animation-name: span-effect;\n          -webkit-animation-duration: 0.2s;\n                  animation-duration: 0.2s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 1.5s;\n                  animation-delay: 1.5s; }\n\n.content .button-wrapper.start .button-inner-wrapper button img {\n          -webkit-animation-name: img-effect;\n                  animation-name: img-effect;\n          -webkit-animation-duration: 1s;\n                  animation-duration: 1s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 1.5s;\n                  animation-delay: 1.5s; }\n\n.content .button-wrapper .button-inner-wrapper {\n      width: 100%;\n      height: 100%;\n      position: relative; }\n\n.content .button-wrapper .button-inner-wrapper .dot {\n        position: absolute;\n        width: 2.4vw;\n        height: 2.4vw;\n        border-radius: 50%;\n        right: 1.6vw;\n        top: 1.6vw; }\n\n.content .button-wrapper .button-inner-wrapper button {\n        background-color: #fff5fa;\n        color: #ea0076;\n        width: 100%;\n        height: 100%;\n        border: 0;\n        border-radius: 8.4vw;\n        font-weight: 600;\n        font-size: 5.3vw; }\n\n.content .button-wrapper .button-inner-wrapper button span {\n          font-size: 5.3vw;\n          display: inline-block;\n          width: 21.9vw;\n          height: 6.3vw;\n          overflow: hidden; }\n\n.content .button-wrapper .button-inner-wrapper button img {\n          display: inline-block;\n          background-color: #fff5fa;\n          height: 5.6vw;\n          margin-left: 3.1vw;\n          position: relative;\n          top: 0.3vw; }\n\n.content .button-wrapper .button-inner-wrapper button:focus {\n        outline: none; }\n"
 
 /***/ }),
 
@@ -636,10 +943,10 @@ var MainPage = /** @class */ (function () {
         var _this = this;
         var buttonStream$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.startButton.nativeElement, 'click')
             .do(function () {
-            _this.startButton.nativeElement.className += "bounceOutUp animated";
+            _this.buttonWrapper.nativeElement.className += " start";
             _this.content.nativeElement.className += " blur";
         })
-            .delay(2000)
+            .delay(5500)
             .subscribe(function (res) {
             _this.router.navigate(['/list']);
         });
@@ -656,6 +963,14 @@ var MainPage = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('startButton'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], MainPage.prototype, "startButton", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('dot'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], MainPage.prototype, "dot", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('buttonWrapper'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], MainPage.prototype, "buttonWrapper", void 0);
     MainPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'main-page',
