@@ -224,166 +224,160 @@ var AppRoutingModule = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "icons", function() { return icons; });
-var ICONS = /** @class */ (function () {
-    function ICONS() {
-        this.icons = {
-            "weather": {
-                "fill": [
-                    "gonicon-sun",
-                    "gonicon-sunny",
-                    "gonicon-sunshine",
-                    "gonicon-cloud",
-                    "gonicon-sun_cloud",
-                    "gonicon-sunny_cloud",
-                    "gonicon-sunshine_cloud",
-                    "gonicon-rainy_cloud",
-                    "gonicon-sun_lightning_cloud",
-                    "gonicon-lightning_rainy",
-                    "gonicon-lightning_snow",
-                    "gonicon-lightning_hail",
-                    "gonicon-fog_cloud",
-                    "gonicon-sun_fog_cloud",
-                    "gonicon-fog_lightning",
-                    "gonicon-cumulus_cloud",
-                    "gonicon-snow_cloud",
-                    "gonicon-hail_snow",
-                    "gonicon-snow",
-                    "gonicon-hail",
-                    "gonicon-fog",
-                    "gonicon-rainy",
-                    "gonicon-rainy_snow",
-                    "gonicon-heavy_snow",
-                    "gonicon-heavy_hail",
-                    "gonicon-heavy_cloud",
-                    "gonicon-dark_cloud",
-                    "gonicon-snow_lightning",
-                    "gonicon-hail_lightning",
-                    "gonicon-rainy_lightning",
-                    "gonicon-dark_cloud_lightning",
-                    "gonicon-rainy_season",
-                    "gonicon-heavy_rainy_season",
-                    "gonicon-heavy_rainy_lightning",
-                    "gonicon-shower",
-                    "gonicon-typhoon_rainy",
-                    "gonicon-typhoon_hail",
-                    "gonicon-typhoon_fog",
-                    "gonicon-typhoon",
-                    "gonicon-typhoon_lightning",
-                    "gonicon-wind_lightning",
-                    "gonicon-sunny_wind_lightning1",
-                    "gonicon-cloud_wind_lightning",
-                    "gonicon-heavy_cloud_wind_lightning",
-                    "gonicon-sunny_wind_lightning2",
-                    "gonicon-wind",
-                    "gonicon-cloud_wind",
-                    "gonicon-heavy_cloud_wind"
-                ],
-                "line": [
-                    "gonicon-sun",
-                    "gonicon-sunny",
-                    "gonicon-sunshine",
-                    "gonicon-cloud",
-                    "gonicon-sun_cloud",
-                    "gonicon-sunny_cloud",
-                    "gonicon-sunshine_cloud",
-                    "gonicon-rainy_cloud",
-                    "gonicon-sun_lightning_cloud",
-                    "gonicon-lightning_rainy",
-                    "gonicon-lightning_snow",
-                    "gonicon-lightning_hail",
-                    "gonicon-fog_cloud",
-                    "gonicon-sun_fog_cloud",
-                    "gonicon-fog_lightning",
-                    "gonicon-cumulus_cloud",
-                    "gonicon-snow_cloud",
-                    "gonicon-hail_snow",
-                    "gonicon-snow",
-                    "gonicon-hail",
-                    "gonicon-fog",
-                    "gonicon-rainy",
-                    "gonicon-rainy_snow",
-                    "gonicon-heavy_snow",
-                    "gonicon-heavy_hail",
-                    "gonicon-heavy_cloud",
-                    "gonicon-dark_cloud",
-                    "gonicon-snow_lightning",
-                    "gonicon-hail_lightning",
-                    "gonicon-rainy_lightning",
-                    "gonicon-dark_cloud_lightning",
-                    "gonicon-rainy_season",
-                    "gonicon-heavy_rainy_season",
-                    "gonicon-heavy_rainy_lightning",
-                    "gonicon-shower",
-                    "gonicon-typhoon_rainy",
-                    "gonicon-typhoon_hail",
-                    "gonicon-typhoon_fog",
-                    "gonicon-typhoon",
-                    "gonicon-typhoon_lightning",
-                    "gonicon-wind_lightning",
-                    "gonicon-sunny_wind_lightning1",
-                    "gonicon-cloud_wind_lightning",
-                    "gonicon-heavy_cloud_wind_lightning",
-                    "gonicon-sunny_wind_lightning2",
-                    "gonicon-wind",
-                    "gonicon-cloud_wind",
-                    "gonicon-heavy_cloud_wind"
-                ],
-                "color": [
-                    "gonicon-sun",
-                    "gonicon-sunny",
-                    "gonicon-sunshine",
-                    "gonicon-cloud",
-                    "gonicon-sun_cloud",
-                    "gonicon-sunny_cloud",
-                    "gonicon-sunshine_cloud",
-                    "gonicon-rainy_cloud",
-                    "gonicon-sun_lightning_cloud",
-                    "gonicon-lightning_rainy",
-                    "gonicon-lightning_snow",
-                    "gonicon-lightning_hail",
-                    "gonicon-fog_cloud",
-                    "gonicon-sun_fog_cloud",
-                    "gonicon-fog_lightning",
-                    "gonicon-cumulus_cloud",
-                    "gonicon-snow_cloud",
-                    "gonicon-hail_snow",
-                    "gonicon-snow",
-                    "gonicon-hail",
-                    "gonicon-fog",
-                    "gonicon-rainy",
-                    "gonicon-rainy_snow",
-                    "gonicon-heavy_snow",
-                    "gonicon-heavy_hail",
-                    "gonicon-heavy_cloud",
-                    "gonicon-dark_cloud",
-                    "gonicon-snow_lightning",
-                    "gonicon-hail_lightning",
-                    "gonicon-rainy_lightning",
-                    "gonicon-dark_cloud_lightning",
-                    "gonicon-rainy_season",
-                    "gonicon-heavy_rainy_season",
-                    "gonicon-heavy_rainy_lightning",
-                    "gonicon-shower",
-                    "gonicon-typhoon_rainy",
-                    "gonicon-typhoon_hail",
-                    "gonicon-typhoon_fog",
-                    "gonicon-typhoon",
-                    "gonicon-typhoon_lightning",
-                    "gonicon-wind_lightning",
-                    "gonicon-sunny_wind_lightning1",
-                    "gonicon-cloud_wind_lightning",
-                    "gonicon-heavy_cloud_wind_lightning",
-                    "gonicon-sunny_wind_lightning2",
-                    "gonicon-wind",
-                    "gonicon-cloud_wind",
-                    "gonicon-heavy_cloud_wind"
-                ]
-            }
-        };
+var icons = {
+    "weather": {
+        "color": [
+            "gonicon-sun",
+            "gonicon-sunny",
+            "gonicon-sunshine",
+            "gonicon-cloud",
+            "gonicon-sun_cloud",
+            "gonicon-sunny_cloud",
+            "gonicon-sunshine_cloud",
+            "gonicon-rainy_cloud",
+            "gonicon-sun_lightning_cloud",
+            "gonicon-lightning_rainy",
+            "gonicon-lightning_snow",
+            "gonicon-lightning_hail",
+            "gonicon-fog_cloud",
+            "gonicon-sun_fog_cloud",
+            "gonicon-fog_lightning",
+            "gonicon-cumulus_cloud",
+            "gonicon-snow_cloud",
+            "gonicon-hail_snow",
+            "gonicon-snow",
+            "gonicon-hail",
+            "gonicon-fog",
+            "gonicon-rainy",
+            "gonicon-rainy_snow",
+            "gonicon-heavy_snow",
+            "gonicon-heavy_hail",
+            "gonicon-heavy_cloud",
+            "gonicon-dark_cloud",
+            "gonicon-snow_lightning",
+            "gonicon-hail_lightning",
+            "gonicon-rainy_lightning",
+            "gonicon-dark_cloud_lightning",
+            "gonicon-rainy_season",
+            "gonicon-heavy_rainy_season",
+            "gonicon-heavy_rainy_lightning",
+            "gonicon-shower",
+            "gonicon-typhoon_rainy",
+            "gonicon-typhoon_hail",
+            "gonicon-typhoon_fog",
+            "gonicon-typhoon",
+            "gonicon-typhoon_lightning",
+            "gonicon-wind_lightning",
+            "gonicon-sunny_wind_lightning1",
+            "gonicon-cloud_wind_lightning",
+            "gonicon-heavy_cloud_wind_lightning",
+            "gonicon-sunny_wind_lightning2",
+            "gonicon-wind",
+            "gonicon-cloud_wind",
+            "gonicon-heavy_cloud_wind"
+        ],
+        "fill": [
+            "gonicon-sun",
+            "gonicon-sunny",
+            "gonicon-sunshine",
+            "gonicon-cloud",
+            "gonicon-sun_cloud",
+            "gonicon-sunny_cloud",
+            "gonicon-sunshine_cloud",
+            "gonicon-rainy_cloud",
+            "gonicon-sun_lightning_cloud",
+            "gonicon-lightning_rainy",
+            "gonicon-lightning_snow",
+            "gonicon-lightning_hail",
+            "gonicon-fog_cloud",
+            "gonicon-sun_fog_cloud",
+            "gonicon-fog_lightning",
+            "gonicon-cumulus_cloud",
+            "gonicon-snow_cloud",
+            "gonicon-hail_snow",
+            "gonicon-snow",
+            "gonicon-hail",
+            "gonicon-fog",
+            "gonicon-rainy",
+            "gonicon-rainy_snow",
+            "gonicon-heavy_snow",
+            "gonicon-heavy_hail",
+            "gonicon-heavy_cloud",
+            "gonicon-dark_cloud",
+            "gonicon-snow_lightning",
+            "gonicon-hail_lightning",
+            "gonicon-rainy_lightning",
+            "gonicon-dark_cloud_lightning",
+            "gonicon-rainy_season",
+            "gonicon-heavy_rainy_season",
+            "gonicon-heavy_rainy_lightning",
+            "gonicon-shower",
+            "gonicon-typhoon_rainy",
+            "gonicon-typhoon_hail",
+            "gonicon-typhoon_fog",
+            "gonicon-typhoon",
+            "gonicon-typhoon_lightning",
+            "gonicon-wind_lightning",
+            "gonicon-sunny_wind_lightning1",
+            "gonicon-cloud_wind_lightning",
+            "gonicon-heavy_cloud_wind_lightning",
+            "gonicon-sunny_wind_lightning2",
+            "gonicon-wind",
+            "gonicon-cloud_wind",
+            "gonicon-heavy_cloud_wind"
+        ],
+        "line": [
+            "gonicon-sun",
+            "gonicon-sunny",
+            "gonicon-sunshine",
+            "gonicon-cloud",
+            "gonicon-sun_cloud",
+            "gonicon-sunny_cloud",
+            "gonicon-sunshine_cloud",
+            "gonicon-rainy_cloud",
+            "gonicon-sun_lightning_cloud",
+            "gonicon-lightning_rainy",
+            "gonicon-lightning_snow",
+            "gonicon-lightning_hail",
+            "gonicon-fog_cloud",
+            "gonicon-sun_fog_cloud",
+            "gonicon-fog_lightning",
+            "gonicon-cumulus_cloud",
+            "gonicon-snow_cloud",
+            "gonicon-hail_snow",
+            "gonicon-snow",
+            "gonicon-hail",
+            "gonicon-fog",
+            "gonicon-rainy",
+            "gonicon-rainy_snow",
+            "gonicon-heavy_snow",
+            "gonicon-heavy_hail",
+            "gonicon-heavy_cloud",
+            "gonicon-dark_cloud",
+            "gonicon-snow_lightning",
+            "gonicon-hail_lightning",
+            "gonicon-rainy_lightning",
+            "gonicon-dark_cloud_lightning",
+            "gonicon-rainy_season",
+            "gonicon-heavy_rainy_season",
+            "gonicon-heavy_rainy_lightning",
+            "gonicon-shower",
+            "gonicon-typhoon_rainy",
+            "gonicon-typhoon_hail",
+            "gonicon-typhoon_fog",
+            "gonicon-typhoon",
+            "gonicon-typhoon_lightning",
+            "gonicon-wind_lightning",
+            "gonicon-sunny_wind_lightning1",
+            "gonicon-cloud_wind_lightning",
+            "gonicon-heavy_cloud_wind_lightning",
+            "gonicon-sunny_wind_lightning2",
+            "gonicon-wind",
+            "gonicon-cloud_wind",
+            "gonicon-heavy_cloud_wind"
+        ],
     }
-    return ICONS;
-}());
-var icons = new ICONS().icons;
+};
 
 
 /***/ }),
@@ -395,7 +389,7 @@ var icons = new ICONS().icons;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"detail-component-content enter\" #content>\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\" \r\n      (click)=\"dismiss()\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"detail-header-wrapper\">\r\n      <div class=\"style-list\">\r\n        <div class=\"style-item\">\r\n          <div class=\"icon gonicon-weather-color gonicon-sun_cloud\"></div>\r\n          <div class=\"label\">Color</div>\r\n        </div>\r\n  \r\n        <div class=\"style-item\">\r\n          <div class=\"icon gonicon-weather-fill gonicon-sun_cloud\"></div>\r\n          <div class=\"label\">Fill</div>\r\n        </div>\r\n  \r\n        <div class=\"style-item\">\r\n          <div class=\"icon gonicon-weather-line gonicon-sun_cloud\"></div>\r\n          <div class=\"label\">Stroke</div>\r\n        </div>\r\n      </div>\r\n  \r\n      <div class=\"detail-main\">\r\n        <div class=\"icon gonicon-weather-fill gonicon-sun_cloud\"></div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"info-wrapper\">\r\n      <div class=\"info-label\">\r\n        sunny_cloud\r\n      </div>\r\n      <div class=\"setup-panel\">\r\n        <div class=\"link-box\">\r\n          &lt;<span class=\"bluesky\">i</span> <span class=\"pink\"> class</span>=&quot;gonicon-weather gonicon-sun_cloud&quot;&gt;&lt;<span class=\"bluesky\">/i</span>&gt;\r\n        </div>\r\n        <!-- <div class=\"link-box\">\r\n          &lt;<span class=\"bluesky\">i</span> <span class=\"pink\"> class</span>=&quot;gonicon-weather gonicon-sun_cloud&quot;&gt;&lt;<span class=\"bluesky\">/i</span>&gt;\r\n        </div> -->\r\n        <div class=\"image-box\">\r\n          <img src=\"assets/img/copy-icon.svg\">\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"palette-wrapper\">\r\n      <div class=\"item-row\">\r\n        <div \r\n          class=\"color-item\" \r\n          [style.border-color]=\"color\" \r\n          *ngFor=\"let color of colors1\">\r\n        </div>\r\n      </div>\r\n      <div class=\"item-row\">\r\n        <div \r\n          class=\"color-item\" \r\n          [style.border-color]=\"color\" \r\n          *ngFor=\"let color of colors2\">\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"detail-component-content enter\" #content>\r\n  <div class=\"component-wrapper\">\r\n\r\n    <div class=\"close-box-outer\" \r\n      (click)=\"dismiss()\">\r\n      <close-button></close-button>\r\n    </div>\r\n\r\n    <div class=\"detail-header-wrapper\">\r\n\r\n      <div class=\"style-list\">\r\n        <div class=\"style-item\" *ngFor=\"let name of styleList\">\r\n          <div class=\"icon gonicon-{{themaName}}-{{name}} {{item}}\"></div>\r\n          <div class=\"label\">{{name}}</div>\r\n        </div>\r\n      </div>\r\n  \r\n      <div class=\"detail-main\">\r\n        <div class=\"icon gonicon-weather-fill {{item}}\" #mainIcon></div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"info-wrapper\">\r\n      <div class=\"info-label\">\r\n        {{iconName}}\r\n      </div>\r\n      <div class=\"setup-panel\">\r\n        <div class=\"link-box\">\r\n          &lt;<span class=\"bluesky\">i</span> <span class=\"pink\"> class</span>=&quot;gonicon-weather gonicon-sun_cloud&quot;&gt;&lt;<span class=\"bluesky\">/i</span>&gt;\r\n        </div>\r\n        <!-- <div class=\"link-box\">\r\n          &lt;<span class=\"bluesky\">i</span> <span class=\"pink\"> class</span>=&quot;gonicon-weather gonicon-sun_cloud&quot;&gt;&lt;<span class=\"bluesky\">/i</span>&gt;\r\n        </div> -->\r\n        <div class=\"image-box\">\r\n          <img src=\"assets/img/copy-icon.svg\">\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"palette-wrapper\">\r\n      <div class=\"item-row\">\r\n        <div \r\n          class=\"color-item\" \r\n          [style.border-color]=\"color\" \r\n          (click)=\"changeColor(color, $event)\"\r\n          *ngFor=\"let color of colors1\">\r\n        </div>\r\n      </div>\r\n      <div class=\"item-row\">\r\n        <div \r\n          class=\"color-item\" \r\n          [style.border-color]=\"color\" \r\n          (click)=\"changeColor(color, $event)\"\r\n          *ngFor=\"let color of colors2\">\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -406,7 +400,7 @@ module.exports = "<div class=\"detail-component-content enter\" #content>\r\n  <
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes setup-link-start {\n  0% {\n    opacity: 0;\n    width: 0vw; }\n  50% {\n    opacity: 0;\n    width: 59.4vw; }\n  100% {\n    opacity: 1;\n    width: 59.4vw; } }\n\n@keyframes setup-link-start {\n  0% {\n    opacity: 0;\n    width: 0vw; }\n  50% {\n    opacity: 0;\n    width: 59.4vw; }\n  100% {\n    opacity: 1;\n    width: 59.4vw; } }\n\n@-webkit-keyframes detail-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: white; } }\n\n@keyframes detail-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: white; } }\n\n.detail-component-content {\n  height: 100%;\n  width: 100%;\n  z-index: 990;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.detail-component-content.enter {\n    -webkit-animation: detail-fade-in 1s;\n            animation: detail-fade-in 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.detail-component-content.leave {\n    -webkit-animation: fade-out 0.5s;\n            animation: fade-out 0.5s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n\n.detail-component-content .component-wrapper {\n    width: 100%;\n    height: 100%;\n    min-height: 177.5vw;\n    position: relative;\n    padding: 10.6vw; }\n\n.detail-component-content .component-wrapper .close-box-outer {\n      position: absolute;\n      top: 10.6vw;\n      right: 10.6vw;\n      width: 10.6vw;\n      height: 10.6vw;\n      z-index: 999; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper {\n      overflow: hidden;\n      position: relative;\n      margin-bottom: 16.9vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list {\n        width: 15vw;\n        float: left; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item {\n          margin-bottom: 6.3vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item .icon {\n            width: 15vw;\n            height: 9.4vw;\n            font-size: 9.4vw;\n            margin-bottom: 2.8vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item .label {\n            font-size: 3.4vw;\n            color: #4a4a4a;\n            text-align: center; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .detail-main {\n        font-size: 24.4vw;\n        display: inline-block;\n        position: absolute;\n        bottom: 0;\n        right: 0; }\n\n.detail-component-content .component-wrapper .info-wrapper {\n      margin-bottom: 9.4vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .info-label {\n        font-size: 8.1vw;\n        text-align: right;\n        color: #4a4a4a;\n        margin-bottom: 5vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel {\n        border: 1px solid #d9d9d9;\n        padding: 3.1vw;\n        width: 100%;\n        position: relative; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box {\n          display: inline-block;\n          width: calc(100% - 9.4vw);\n          font-size: 4.1vw;\n          line-height: 1.5em;\n          word-break: break-all; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box .bluesky {\n            color: #4abde5; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box .pink {\n            color: #ff9cce; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .image-box {\n          display: inline-block;\n          width: 9.4vw;\n          min-height: 4.1vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .image-box img {\n            position: absolute;\n            right: 3.1vw;\n            width: 5.6vw; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row {\n      width: 100%;\n      text-align: center; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row:first-child {\n        margin-bottom: 4.1vw; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item {\n        display: inline-block;\n        width: 12.5vw;\n        height: 12.5vw;\n        border-radius: 50%;\n        margin: 0 2vw;\n        border: 1px solid #ffffff; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item:first-child {\n          margin-left: 0; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item:last-child {\n          margin-right: 0; }\n"
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes setup-link-start {\n  0% {\n    opacity: 0;\n    width: 0vw; }\n  50% {\n    opacity: 0;\n    width: 59.4vw; }\n  100% {\n    opacity: 1;\n    width: 59.4vw; } }\n\n@keyframes setup-link-start {\n  0% {\n    opacity: 0;\n    width: 0vw; }\n  50% {\n    opacity: 0;\n    width: 59.4vw; }\n  100% {\n    opacity: 1;\n    width: 59.4vw; } }\n\n@-webkit-keyframes detail-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: white; } }\n\n@keyframes detail-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: white; } }\n\n.detail-component-content {\n  height: 100%;\n  width: 100%;\n  z-index: 990;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.detail-component-content.enter {\n    -webkit-animation: detail-fade-in 1s;\n            animation: detail-fade-in 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.detail-component-content.leave {\n    -webkit-animation: fade-out 0.5s;\n            animation: fade-out 0.5s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n\n.detail-component-content .component-wrapper {\n    width: 100%;\n    height: 100%;\n    min-height: 177.5vw;\n    position: relative;\n    padding: 10.6vw; }\n\n.detail-component-content .component-wrapper .close-box-outer {\n      position: absolute;\n      top: 10.6vw;\n      right: 10.6vw;\n      width: 10.6vw;\n      height: 10.6vw;\n      z-index: 999; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper {\n      overflow: hidden;\n      position: relative;\n      margin-bottom: 16.9vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list {\n        height: 67.5vw;\n        float: left; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item {\n          margin-bottom: 6.3vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item .icon {\n            height: 9.4vw;\n            font-size: 9.4vw;\n            margin-bottom: 2.8vw; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .style-list .style-item .label {\n            font-size: 3.4vw;\n            color: #4a4a4a;\n            text-align: center; }\n\n.detail-component-content .component-wrapper .detail-header-wrapper .detail-main {\n        font-size: 24.4vw;\n        display: inline-block;\n        position: absolute;\n        bottom: 0;\n        right: 0; }\n\n.detail-component-content .component-wrapper .info-wrapper {\n      margin-bottom: 9.4vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .info-label {\n        font-size: 7.2vw;\n        text-align: left;\n        color: #4a4a4a;\n        margin-bottom: 5vw;\n        letter-spacing: -1px; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel {\n        border: 1px solid #d9d9d9;\n        padding: 3.1vw;\n        width: 100%;\n        position: relative; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box {\n          display: inline-block;\n          width: calc(100% - 9.4vw);\n          font-size: 4.1vw;\n          line-height: 1.5em;\n          word-break: break-all; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box .bluesky {\n            color: #4abde5; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .link-box .pink {\n            color: #ff9cce; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .image-box {\n          display: inline-block;\n          width: 9.4vw;\n          min-height: 4.1vw; }\n\n.detail-component-content .component-wrapper .info-wrapper .setup-panel .image-box img {\n            position: absolute;\n            right: 3.1vw;\n            width: 5.6vw; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row {\n      width: 100%;\n      text-align: center; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row:first-child {\n        margin-bottom: 4.1vw; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item {\n        display: inline-block;\n        width: 12.5vw;\n        height: 12.5vw;\n        border-radius: 50%;\n        margin: 0 2vw;\n        border: 1px solid #ffffff; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item:first-child {\n          margin-left: 0; }\n\n.detail-component-content .component-wrapper .palette-wrapper .item-row .color-item:last-child {\n          margin-right: 0; }\n"
 
 /***/ }),
 
@@ -423,6 +417,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../icons */ "./src/app/icons.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -432,6 +427,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -455,11 +451,31 @@ var DetailComponent = /** @class */ (function () {
             "#000000"
         ];
     }
-    DetailComponent.prototype.ngOnInit = function () { };
+    DetailComponent.prototype.ngOnInit = function () {
+        console.log("detail item test :: ", this.item);
+        console.log("detail thema test :: ", this.thema);
+        var themaList = this.thema.split('-');
+        this.iconName = this.item.replace(/gonicon-/g, "");
+        this.themaName = themaList[1];
+        this.themaStyle = themaList[2];
+        console.log(themaList);
+        console.log(this.themaName);
+        console.log(this.themaStyle);
+        this.styleList = Object.keys(_icons__WEBPACK_IMPORTED_MODULE_3__["icons"][this.themaName]);
+    };
     DetailComponent.prototype.ngAfterViewInit = function () { };
+    DetailComponent.prototype.changeColor = function (color, e) {
+        console.log("color :: ", color);
+        console.log("e :: ", e);
+        if (this.current) {
+            this.current.style.backgroundColor = "#FFFFFF";
+        }
+        this.mainIcon.nativeElement.style.color = color;
+        e.target.style.backgroundColor = color;
+        this.current = e.target;
+    };
     DetailComponent.prototype.dismiss = function () {
         var _this = this;
-        console.log("dis miss");
         rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].of(1)
             .do(function () {
             _this.content.nativeElement.classList.remove('enter');
@@ -471,6 +487,14 @@ var DetailComponent = /** @class */ (function () {
         });
     };
     __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], DetailComponent.prototype, "item", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], DetailComponent.prototype, "thema", void 0);
+    __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
         __metadata("design:type", Object)
     ], DetailComponent.prototype, "closeEvent", void 0);
@@ -478,6 +502,10 @@ var DetailComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('content'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], DetailComponent.prototype, "content", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('mainIcon'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], DetailComponent.prototype, "mainIcon", void 0);
     DetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'detail-component',
@@ -752,7 +780,7 @@ var ListMenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (closeEvent)=\"menuClose($event)\"></list-menu-component>\r\n\r\n<guide-component\r\n  *ngIf=\"guideState\"\r\n  (closeEvent)=\"guideClose($event)\"></guide-component>\r\n\r\n<detail-component\r\n  *ngIf=\"detailState\"\r\n  (closeEvent)=\"detailClose($event)\"></detail-component>\r\n\r\n<div class=\"content\" [ngClass]=\"{'hold': contentState, 'out':!contentState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <div \r\n      class=\"guide-icon-wrapper\"\r\n      (click)=\"guideOpen($event)\">\r\n      <div class=\"inner-wrapper\">\r\n        <img class=\"guide-circle\" src=\"assets/img/list-circle.svg\">\r\n        <img class=\"guide-arrow\" src=\"assets/img/list-down-arrow.svg\">\r\n      </div>\r\n    </div>\r\n    <img \r\n      class=\"search-icon\" \r\n      src=\"assets/img/list-search-icon.svg\">\r\n    <img \r\n      class=\"menu-icon\" \r\n      (click)=\"menuOpen($event)\" \r\n      src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        01\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" #nameB>B</strong>\r\n        <span class=\"fadeIn\" #nameSky>lue sky</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img \r\n      #weatherLogo\r\n      class=\"weather-logo fadeInRight\" \r\n      src=\"assets/img/weather-logo.svg\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      오늘의 날씨를 한눈에 인지하기 쉬운 정사각<br>\r\n      형의 픽셀형태로 제작하였습니다. ‘ 해, 구름,<br> \r\n      번개, 태풍등.. ’ 하나의 주제가 되는 날씨에<br> \r\n      각각의 색을 부여하여 의미를 더하였습니다.\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\" \r\n      (click)=\"detailOpen()\" \r\n      *ngFor=\"let icon of activeIcon.list\">\r\n      <div class=\"icon {{activeIcon.name}} {{icon}}\"></div>\r\n      <div class=\"name\">sun</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
+module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (closeEvent)=\"menuClose($event)\"></list-menu-component>\r\n\r\n<guide-component\r\n  *ngIf=\"guideState\"\r\n  (closeEvent)=\"guideClose($event)\"></guide-component>\r\n\r\n<detail-component\r\n  [item]=\"detailActiveItem\"\r\n  [thema]=\"detailActiveThema\"\r\n  *ngIf=\"detailState\"\r\n  (closeEvent)=\"detailClose($event)\"></detail-component>\r\n\r\n<div class=\"content\" [ngClass]=\"{'hold': contentState, 'out':!contentState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <div \r\n      class=\"guide-icon-wrapper\"\r\n      (click)=\"guideOpen($event)\">\r\n      <div class=\"inner-wrapper\">\r\n        <img class=\"guide-circle\" src=\"assets/img/list-circle.svg\">\r\n        <img #arrow class=\"guide-arrow\" src=\"assets/img/list-down-arrow.svg\">\r\n      </div>\r\n    </div>\r\n    <img \r\n      class=\"search-icon\" \r\n      src=\"assets/img/list-search-icon.svg\">\r\n    <img \r\n      class=\"menu-icon\" \r\n      (click)=\"menuOpen($event)\" \r\n      src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        01\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" #nameB>B</strong>\r\n        <span class=\"fadeIn\" #nameSky>lue sky</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img \r\n      #weatherLogo\r\n      class=\"weather-logo fadeInRight\" \r\n      src=\"assets/img/weather-logo.svg\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      오늘의 날씨를 한눈에 인지하기 쉬운 정사각<br>\r\n      형의 픽셀형태로 제작하였습니다. ‘ 해, 구름,<br> \r\n      번개, 태풍등.. ’ 하나의 주제가 되는 날씨에<br> \r\n      각각의 색을 부여하여 의미를 더하였습니다.\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\" \r\n      (click)=\"detailOpen(item)\" \r\n      *ngFor=\"let item of activeIcon.list\">\r\n      <div class=\"icon {{activeIcon.name}} {{item}}\"></div>\r\n      <div class=\"name\">sun</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
 
 /***/ }),
 
@@ -763,7 +791,7 @@ module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (clos
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@-webkit-keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n.content {\n  height: 100%; }\n\n.content.hold {\n    overflow: hidden;\n    -webkit-animation: blur-in-effect 1s;\n            animation: blur-in-effect 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.content.out {\n    -webkit-animation: blur-out-effect 0.3s;\n            animation: blur-out-effect 0.3s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n\n.content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right;\n    position: relative; }\n\n.content .header-wrapper .guide-icon-wrapper {\n      position: absolute;\n      top: 6vh;\n      left: 10.6vw;\n      text-align: center;\n      width: 10.6vw;\n      height: 10.6vw; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper {\n        position: relative;\n        width: 100%;\n        height: 100%; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img {\n          position: absolute; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-circle {\n            top: 0;\n            left: 0; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-arrow {\n            width: 5.3vw;\n            height: 3.1vw;\n            left: 50%;\n            top: 50%;\n            margin-left: -2.7vw;\n            margin-top: -1.6vw; }\n\n.content .header-wrapper img {\n      vertical-align: middle; }\n\n.content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n\n.content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n\n.content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n\n.content .logo-wrapper .name-panel {\n      float: left; }\n\n.content .logo-wrapper .name-panel .big-number {\n        text-align: left;\n        text-indent: -1.9vw;\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n\n.content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        color: #438fe8;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n\n.content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n\n.content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n\n.content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n\n.content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n\n.content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n\n.content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n\n.content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@-webkit-keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@-webkit-keyframes icon-wrapper-effect {\n  0% {\n    top: -6vh; }\n  40% {\n    top: 8.8vh; }\n  100% {\n    top: 6vh; } }\n\n@keyframes icon-wrapper-effect {\n  0% {\n    top: -6vh; }\n  40% {\n    top: 8.8vh; }\n  100% {\n    top: 6vh; } }\n\n@-webkit-keyframes circle-effect {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  30% {\n    -webkit-transform: rotate(-30deg);\n            transform: rotate(-30deg); }\n  60% {\n    -webkit-transform: rotate(20deg);\n            transform: rotate(20deg); }\n  100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); } }\n\n@keyframes circle-effect {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  30% {\n    -webkit-transform: rotate(-30deg);\n            transform: rotate(-30deg); }\n  60% {\n    -webkit-transform: rotate(20deg);\n            transform: rotate(20deg); }\n  100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); } }\n\n@-webkit-keyframes arrow-effect {\n  0% {\n    margin-top: -1.6vw; }\n  40% {\n    margin-top: 0vw; }\n  100% {\n    margin-top: -1.6vw; } }\n\n@keyframes arrow-effect {\n  0% {\n    margin-top: -1.6vw; }\n  40% {\n    margin-top: 0vw; }\n  100% {\n    margin-top: -1.6vw; } }\n\n.content {\n  height: 100%; }\n\n.content.hold {\n    overflow: hidden;\n    -webkit-animation: blur-in-effect 1s;\n            animation: blur-in-effect 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.content.out {\n    -webkit-animation: blur-out-effect 0.3s;\n            animation: blur-out-effect 0.3s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n\n.content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right;\n    position: relative; }\n\n.content .header-wrapper .guide-icon-wrapper {\n      position: absolute;\n      top: -6vh;\n      left: 10.6vw;\n      text-align: center;\n      width: 10.6vw;\n      height: 10.6vw;\n      -webkit-animation: icon-wrapper-effect 1s;\n              animation: icon-wrapper-effect 1s;\n      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper {\n        position: relative;\n        width: 100%;\n        height: 100%; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img {\n          position: absolute; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-circle {\n            top: 0;\n            left: 0;\n            width: 10.6vw;\n            height: 10.6vw;\n            -webkit-animation: circle-effect 0.5s;\n                    animation: circle-effect 0.5s;\n            -webkit-animation-fill-mode: forwards;\n                    animation-fill-mode: forwards;\n            -webkit-animation-delay: 3s;\n                    animation-delay: 3s; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-arrow {\n            width: 5.3vw;\n            height: 3.1vw;\n            left: 50%;\n            top: 50%;\n            margin-left: -2.7vw;\n            margin-top: -1.6vw; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-arrow.active {\n              -webkit-animation: arrow-effect 0.5s;\n                      animation: arrow-effect 0.5s;\n              -webkit-animation-fill-mode: forwards;\n                      animation-fill-mode: forwards; }\n\n.content .header-wrapper img {\n      vertical-align: middle; }\n\n.content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n\n.content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n\n.content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n\n.content .logo-wrapper .name-panel {\n      float: left; }\n\n.content .logo-wrapper .name-panel .big-number {\n        text-align: left;\n        text-indent: -1.9vw;\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n\n.content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        color: #438fe8;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n\n.content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n\n.content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n\n.content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n\n.content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n\n.content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n\n.content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n\n.content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
 
 /***/ }),
 
@@ -779,7 +807,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListPage", function() { return ListPage; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../icons */ "./src/app/icons.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../icons */ "./src/app/icons.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -789,6 +818,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -802,18 +832,20 @@ var ListPage = /** @class */ (function () {
         this.detailState = false;
         // detailState = true;
         // contentState = true;
+        this.detailActiveItem = "";
+        this.detailActiveThema = "";
         this.activeIcon = {
             name: "",
             list: []
         };
-        console.log("icons test :: ", _icons__WEBPACK_IMPORTED_MODULE_2__["icons"]);
+        console.log("icons test :: ", _icons__WEBPACK_IMPORTED_MODULE_3__["icons"]);
     }
     ListPage.prototype.ngOnInit = function () {
         this.changeActiveIcon("weather", "fill");
     };
     ListPage.prototype.changeActiveIcon = function (name, thema) {
         this.activeIcon.name = "gonicon-" + name + "-" + thema;
-        this.activeIcon.list = _icons__WEBPACK_IMPORTED_MODULE_2__["icons"][name][thema];
+        this.activeIcon.list = _icons__WEBPACK_IMPORTED_MODULE_3__["icons"][name][thema];
     };
     ListPage.prototype.ngAfterViewInit = function () {
         this.renderer.addClass(this.bigNumber.nativeElement, 'animated');
@@ -831,14 +863,28 @@ var ListPage = /** @class */ (function () {
         this.contentState = false;
     };
     ListPage.prototype.guideOpen = function () {
-        this.guideState = true;
-        this.contentState = true;
+        var _this = this;
+        if (this.arrow.nativeElement.classList.contains('active'))
+            return false;
+        rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].of([''])
+            .do(function () {
+            _this.arrow.nativeElement.className += " active";
+        })
+            .delay(500)
+            .subscribe(function (res) {
+            _this.arrow.nativeElement.className
+                = _this.arrow.nativeElement.className.replace(/ active/g, "");
+            _this.guideState = true;
+            _this.contentState = true;
+        });
     };
     ListPage.prototype.guideClose = function () {
         this.guideState = false;
         this.contentState = false;
     };
-    ListPage.prototype.detailOpen = function () {
+    ListPage.prototype.detailOpen = function (item) {
+        this.detailActiveItem = item;
+        this.detailActiveThema = this.activeIcon.name;
         this.detailState = true;
         this.contentState = true;
     };
@@ -866,6 +912,10 @@ var ListPage = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('infoWrapper'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], ListPage.prototype, "infoWrapper", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('arrow'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], ListPage.prototype, "arrow", void 0);
     ListPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'list-page',
