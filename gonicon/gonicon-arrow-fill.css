@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'gonicon-arrow-fill';
-  src:  url('fonts/gonicon-arrow-fill.eot?wp1b5q');
-  src:  url('fonts/gonicon-arrow-fill.eot?wp1b5q#iefix') format('embedded-opentype'),
-    url('fonts/gonicon-arrow-fill.ttf?wp1b5q') format('truetype'),
-    url('fonts/gonicon-arrow-fill.woff?wp1b5q') format('woff'),
-    url('fonts/gonicon-arrow-fill.svg?wp1b5q#gonicon-arrow-fill') format('svg');
+  src:  url('gonicon-arrow-fill-fonts/gonicon-arrow-fill.eot?wp1b5q');
+  src:  url('gonicon-arrow-fill-fonts/gonicon-arrow-fill.eot?wp1b5q#iefix') format('embedded-opentype'),
+    url('gonicon-arrow-fill-fonts/gonicon-arrow-fill.ttf?wp1b5q') format('truetype'),
+    url('gonicon-arrow-fill-fonts/gonicon-arrow-fill.woff?wp1b5q') format('woff'),
+    url('gonicon-arrow-fill-fonts/gonicon-arrow-fill.svg?wp1b5q#gonicon-arrow-fill') format('svg');
   font-weight: normal;
   font-style: normal;
 }

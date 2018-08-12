@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'gonicon-arrow-reverse';
-  src:  url('fonts/gonicon-arrow-reverse.eot?p3jcdv');
-  src:  url('fonts/gonicon-arrow-reverse.eot?p3jcdv#iefix') format('embedded-opentype'),
-    url('fonts/gonicon-arrow-reverse.ttf?p3jcdv') format('truetype'),
-    url('fonts/gonicon-arrow-reverse.woff?p3jcdv') format('woff'),
-    url('fonts/gonicon-arrow-reverse.svg?p3jcdv#gonicon-arrow-reverse') format('svg');
+  src:  url('gonicon-arrow-reverse-fonts/gonicon-arrow-reverse.eot?p3jcdv');
+  src:  url('gonicon-arrow-reverse-fonts/gonicon-arrow-reverse.eot?p3jcdv#iefix') format('embedded-opentype'),
+    url('gonicon-arrow-reverse-fonts/gonicon-arrow-reverse.ttf?p3jcdv') format('truetype'),
+    url('gonicon-arrow-reverse-fonts/gonicon-arrow-reverse.woff?p3jcdv') format('woff'),
+    url('gonicon-arrow-reverse-fonts/gonicon-arrow-reverse.svg?p3jcdv#gonicon-arrow-reverse') format('svg');
   font-weight: normal;
   font-style: normal;
 }
