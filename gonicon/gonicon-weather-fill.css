@@ -24,147 +24,147 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.gonicon-weather-fill.gonicon-sun:before {
+.gonicon-sun:before {
   content: "\e900";
 }
-.gonicon-weather-fill.gonicon-sunny:before {
+.gonicon-sunny:before {
   content: "\e901";
 }
-.gonicon-weather-fill.gonicon-sunshine:before {
+.gonicon-sunshine:before {
   content: "\e902";
 }
-.gonicon-weather-fill.gonicon-cloud:before {
+.gonicon-cloud:before {
   content: "\e903";
 }
-.gonicon-weather-fill.gonicon-sun_cloud:before {
+.gonicon-sun_cloud:before {
   content: "\e904";
 }
-.gonicon-weather-fill.gonicon-sunny_cloud:before {
+.gonicon-sunny_cloud:before {
   content: "\e905";
 }
-.gonicon-weather-fill.gonicon-sunshine_cloud:before {
+.gonicon-sunshine_cloud:before {
   content: "\e906";
 }
-.gonicon-weather-fill.gonicon-rainy_cloud:before {
+.gonicon-rainy_cloud:before {
   content: "\e907";
 }
-.gonicon-weather-fill.gonicon-sun_lightning_cloud:before {
+.gonicon-sun_lightning_cloud:before {
   content: "\e908";
 }
-.gonicon-weather-fill.gonicon-lightning_rainy:before {
+.gonicon-lightning_rainy:before {
   content: "\e909";
 }
-.gonicon-weather-fill.gonicon-lightning_snow:before {
+.gonicon-lightning_snow:before {
   content: "\e90a";
 }
-.gonicon-weather-fill.gonicon-lightning_hail:before {
+.gonicon-lightning_hail:before {
   content: "\e90b";
 }
-.gonicon-weather-fill.gonicon-fog_cloud:before {
+.gonicon-fog_cloud:before {
   content: "\e90c";
 }
-.gonicon-weather-fill.gonicon-sun_fog_cloud:before {
+.gonicon-sun_fog_cloud:before {
   content: "\e90d";
 }
-.gonicon-weather-fill.gonicon-fog_lightning:before {
+.gonicon-fog_lightning:before {
   content: "\e90e";
 }
-.gonicon-weather-fill.gonicon-cumulus_cloud:before {
+.gonicon-cumulus_cloud:before {
   content: "\e90f";
 }
-.gonicon-weather-fill.gonicon-snow_cloud:before {
+.gonicon-snow_cloud:before {
   content: "\e910";
 }
-.gonicon-weather-fill.gonicon-hail_snow:before {
+.gonicon-hail_snow:before {
   content: "\e911";
 }
-.gonicon-weather-fill.gonicon-snow:before {
+.gonicon-snow:before {
   content: "\e912";
 }
-.gonicon-weather-fill.gonicon-hail:before {
+.gonicon-hail:before {
   content: "\e913";
 }
-.gonicon-weather-fill.gonicon-fog:before {
+.gonicon-fog:before {
   content: "\e914";
 }
-.gonicon-weather-fill.gonicon-rainy:before {
+.gonicon-rainy:before {
   content: "\e915";
 }
-.gonicon-weather-fill.gonicon-rainy_snow:before {
+.gonicon-rainy_snow:before {
   content: "\e916";
 }
-.gonicon-weather-fill.gonicon-heavy_snow:before {
+.gonicon-heavy_snow:before {
   content: "\e917";
 }
-.gonicon-weather-fill.gonicon-heavy_hail:before {
+.gonicon-heavy_hail:before {
   content: "\e918";
 }
-.gonicon-weather-fill.gonicon-heavy_cloud:before {
+.gonicon-heavy_cloud:before {
   content: "\e919";
 }
-.gonicon-weather-fill.gonicon-dark_cloud:before {
+.gonicon-dark_cloud:before {
   content: "\e91a";
 }
-.gonicon-weather-fill.gonicon-snow_lightning:before {
+.gonicon-snow_lightning:before {
   content: "\e91b";
 }
-.gonicon-weather-fill.gonicon-hail_lightning:before {
+.gonicon-hail_lightning:before {
   content: "\e91c";
 }
-.gonicon-weather-fill.gonicon-rainy_lightning:before {
+.gonicon-rainy_lightning:before {
   content: "\e91d";
 }
-.gonicon-weather-fill.gonicon-dark_cloud_lightning:before {
+.gonicon-dark_cloud_lightning:before {
   content: "\e91e";
 }
-.gonicon-weather-fill.gonicon-rainy_season:before {
+.gonicon-rainy_season:before {
   content: "\e91f";
 }
-.gonicon-weather-fill.gonicon-heavy_rainy_season:before {
+.gonicon-heavy_rainy_season:before {
   content: "\e920";
 }
-.gonicon-weather-fill.gonicon-heavy_rainy_lightning:before {
+.gonicon-heavy_rainy_lightning:before {
   content: "\e921";
 }
-.gonicon-weather-fill.gonicon-shower:before {
+.gonicon-shower:before {
   content: "\e922";
 }
-.gonicon-weather-fill.gonicon-typhoon_rainy:before {
+.gonicon-typhoon_rainy:before {
   content: "\e923";
 }
-.gonicon-weather-fill.gonicon-typhoon_hail:before {
+.gonicon-typhoon_hail:before {
   content: "\e924";
 }
-.gonicon-weather-fill.gonicon-typhoon_fog:before {
+.gonicon-typhoon_fog:before {
   content: "\e925";
 }
-.gonicon-weather-fill.gonicon-typhoon:before {
+.gonicon-typhoon:before {
   content: "\e926";
 }
-.gonicon-weather-fill.gonicon-typhoon_lightning:before {
+.gonicon-typhoon_lightning:before {
   content: "\e927";
 }
-.gonicon-weather-fill.gonicon-wind_lightning:before {
+.gonicon-wind_lightning:before {
   content: "\e928";
 }
-.gonicon-weather-fill.gonicon-sunny_wind_lightning1:before {
+.gonicon-sunny_wind_lightning1:before {
   content: "\e929";
 }
-.gonicon-weather-fill.gonicon-cloud_wind_lightning:before {
+.gonicon-cloud_wind_lightning:before {
   content: "\e92a";
 }
-.gonicon-weather-fill.gonicon-heavy_cloud_wind_lightning:before {
+.gonicon-heavy_cloud_wind_lightning:before {
   content: "\e92b";
 }
-.gonicon-weather-fill.gonicon-sunny_wind_lightning2:before {
+.gonicon-sunny_wind_lightning2:before {
   content: "\e92c";
 }
-.gonicon-weather-fill.gonicon-wind:before {
+.gonicon-wind:before {
   content: "\e92d";
 }
-.gonicon-weather-fill.gonicon-cloud_wind:before {
+.gonicon-cloud_wind:before {
   content: "\e92e";
 }
-.gonicon-weather-fill.gonicon-heavy_cloud_wind:before {
+.gonicon-heavy_cloud_wind:before {
   content: "\e92f";
 }

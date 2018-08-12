@@ -1,6 +1,9 @@
 @import "gonicon/gonicon-weather-fill.css";
 @import "gonicon/gonicon-weather-color.css";
 @import "gonicon/gonicon-weather-line.css";
+@import "gonicon/gonicon-arrow-line.css";
+@import "gonicon/gonicon-arrow-color.css";
+@import "gonicon/gonicon-arrow-fill.css";
 
 .title{
   margin: 10px;

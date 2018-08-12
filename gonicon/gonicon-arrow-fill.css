@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'gonicon-arrow-fill';
+  src:  url('fonts/gonicon-arrow-fill.eot?wp1b5q');
+  src:  url('fonts/gonicon-arrow-fill.eot?wp1b5q#iefix') format('embedded-opentype'),
+    url('fonts/gonicon-arrow-fill.ttf?wp1b5q') format('truetype'),
+    url('fonts/gonicon-arrow-fill.woff?wp1b5q') format('woff'),
+    url('fonts/gonicon-arrow-fill.svg?wp1b5q#gonicon-arrow-fill') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gonicon-arrow-fill {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gonicon-arrow-fill' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gonicon-circle-down:before {
+  content: "\e900";
+}
+.gonicon-circle-left:before {
+  content: "\e901";
+}
+.gonicon-circle-left-down:before {
+  content: "\e902";
+}
+.gonicon-circle-left-up:before {
+  content: "\e903";
+}
+.gonicon-circle-right:before {
+  content: "\e904";
+}
+.gonicon-circle-right-down:before {
+  content: "\e905";
+}
+.gonicon-circle-right-up:before {
+  content: "\e906";
+}
+.gonicon-circle-up:before {
+  content: "\e907";
+}
+.gonicon-diamond-down:before {
+  content: "\e908";
+}
+.gonicon-diamond-left:before {
+  content: "\e909";
+}
+.gonicon-diamond-right:before {
+  content: "\e90a";
+}
+.gonicon-diamond-up:before {
+  content: "\e90b";
+}
+.gonicon-hat-down:before {
+  content: "\e90c";
+}
+.gonicon-hat-left:before {
+  content: "\e90d";
+}
+.gonicon-hat-left-double:before {
+  content: "\e90e";
+}
+.gonicon-hat-left-up:before {
+  content: "\e90f";
+}
+.gonicon-hat-right:before {
+  content: "\e910";
+}
+.gonicon-hat-right-double:before {
+  content: "\e911";
+}
+.gonicon-hat-right-up:before {
+  content: "\e912";
+}
+.gonicon-hat-up:before {
+  content: "\e913";
+}
+.gonicon-rectangle-down:before {
+  content: "\e914";
+}
+.gonicon-rectangle-left:before {
+  content: "\e915";
+}
+.gonicon-rectangle-left-down:before {
+  content: "\e916";
+}
+.gonicon-rectangle-left-up:before {
+  content: "\e917";
+}
+.gonicon-rectangle-right:before {
+  content: "\e918";
+}
+.gonicon-rectangle-right-down:before {
+  content: "\e919";
+}
+.gonicon-rectangle-right-up:before {
+  content: "\e91a";
+}
+.gonicon-rectangle-up:before {
+  content: "\e91b";
+}
+.gonicon-sharp-down:before {
+  content: "\e91c";
+}
+.gonicon-sharp-left:before {
+  content: "\e91d";
+}
+.gonicon-sharp-left-down:before {
+  content: "\e91e";
+}
+.gonicon-sharp-left-up:before {
+  content: "\e91f";
+}
+.gonicon-sharp-right:before {
+  content: "\e920";
+}
+.gonicon-sharp-right-down:before {
+  content: "\e921";
+}
+.gonicon-sharp-right-up:before {
+  content: "\e922";
+}
+.gonicon-sharp-up:before {
+  content: "\e923";
+}
+.gonicon-soft-down:before {
+  content: "\e924";
+}
+.gonicon-soft-left:before {
+  content: "\e925";
+}
+.gonicon-soft-left-down:before {
+  content: "\e926";
+}
+.gonicon-soft-left-up:before {
+  content: "\e927";
+}
+.gonicon-soft-right:before {
+  content: "\e928";
+}
+.gonicon-soft-right-down:before {
+  content: "\e929";
+}
+.gonicon-soft-right-up:before {
+  content: "\e92a";
+}
+.gonicon-soft-up:before {
+  content: "\e92b";
+}
+.gonicon-triangle-down:before {
+  content: "\e92c";
+}
+.gonicon-triangle-left:before {
+  content: "\e92d";
+}
+.gonicon-triangle-right:before {
+  content: "\e92e";
+}
+.gonicon-triangle-up:before {
+  content: "\e92f";
+}
+.gonicon-woolen-hat-down:before {
+  content: "\e930";
+}
+.gonicon-woolen-hat-left:before {
+  content: "\e931";
+}
+.gonicon-woolen-hat-left-double:before {
+  content: "\e932";
+}
+.gonicon-woolen-hat-left-up:before {
+  content: "\e933";
+}
+.gonicon-woolen-hat-right:before {
+  content: "\e934";
+}
+.gonicon-woolen-hat-right-double:before {
+  content: "\e935";
+}
+.gonicon-woolen-hat-right-up:before {
+  content: "\e936";
+}
+.gonicon-woolen-hat-up:before {
+  content: "\e937";
+}
