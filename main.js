@@ -101,18 +101,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
-/* harmony import */ var _pages_main_main__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/main/main */ "./src/app/pages/main/main.ts");
-/* harmony import */ var _pages_list_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/list/list */ "./src/app/pages/list/list.ts");
-/* harmony import */ var _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/list/list-menu-component/list-menu-component */ "./src/app/pages/list/list-menu-component/list-menu-component.ts");
-/* harmony import */ var _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./uiBox/closeButton/closeButton */ "./src/app/uiBox/closeButton/closeButton.ts");
-/* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
-/* harmony import */ var _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./uiBox/carousel/carousel */ "./src/app/uiBox/carousel/carousel.ts");
-/* harmony import */ var _pages_list_guide_component_guide_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/list/guide-component/guide-component */ "./src/app/pages/list/guide-component/guide-component.ts");
-/* harmony import */ var _pages_list_detail_component_detail_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/list/detail-component/detail-component */ "./src/app/pages/list/detail-component/detail-component.ts");
-/* harmony import */ var _services_theme_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/theme.service */ "./src/app/services/theme.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
+/* harmony import */ var _pages_main_main__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/main/main */ "./src/app/pages/main/main.ts");
+/* harmony import */ var _pages_list_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/list/list */ "./src/app/pages/list/list.ts");
+/* harmony import */ var _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/list/list-menu-component/list-menu-component */ "./src/app/pages/list/list-menu-component/list-menu-component.ts");
+/* harmony import */ var _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./uiBox/closeButton/closeButton */ "./src/app/uiBox/closeButton/closeButton.ts");
+/* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
+/* harmony import */ var _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./uiBox/carousel/carousel */ "./src/app/uiBox/carousel/carousel.ts");
+/* harmony import */ var _pages_list_guide_component_guide_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/list/guide-component/guide-component */ "./src/app/pages/list/guide-component/guide-component.ts");
+/* harmony import */ var _pages_list_detail_component_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/list/detail-component/detail-component */ "./src/app/pages/list/detail-component/detail-component.ts");
+/* harmony import */ var _services_theme_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/theme.service */ "./src/app/services/theme.service.ts");
+/* harmony import */ var _pages_main_mobile_main_m__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/main/mobile/main-m */ "./src/app/pages/main/mobile/main-m.ts");
+/* harmony import */ var _pages_main_desk_main_desk__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/main/desk/main-desk */ "./src/app/pages/main/desk/main-desk.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -133,32 +136,38 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _pages_main_main__WEBPACK_IMPORTED_MODULE_5__["MainPage"],
-                _pages_list_list__WEBPACK_IMPORTED_MODULE_6__["ListPage"],
-                _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_7__["ListMenuComponent"],
-                _pages_list_guide_component_guide_component__WEBPACK_IMPORTED_MODULE_11__["GuideComponent"],
-                _pages_list_detail_component_detail_component__WEBPACK_IMPORTED_MODULE_12__["DetailComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _pages_main_main__WEBPACK_IMPORTED_MODULE_6__["MainPage"],
+                _pages_main_mobile_main_m__WEBPACK_IMPORTED_MODULE_15__["MainPageMobile"],
+                _pages_main_desk_main_desk__WEBPACK_IMPORTED_MODULE_16__["MainPageDesk"],
+                _pages_list_list__WEBPACK_IMPORTED_MODULE_7__["ListPage"],
+                _pages_list_list_menu_component_list_menu_component__WEBPACK_IMPORTED_MODULE_8__["ListMenuComponent"],
+                _pages_list_guide_component_guide_component__WEBPACK_IMPORTED_MODULE_12__["GuideComponent"],
+                _pages_list_detail_component_detail_component__WEBPACK_IMPORTED_MODULE_13__["DetailComponent"],
                 // ui
-                _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_8__["CloseButtonUi"],
-                _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_10__["CarouselUi"]
+                _uiBox_closeButton_closeButton__WEBPACK_IMPORTED_MODULE_9__["CloseButtonUi"],
+                _uiBox_carousel_carousel__WEBPACK_IMPORTED_MODULE_11__["CarouselUi"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
-                _app_routing__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
-                _ngu_carousel__WEBPACK_IMPORTED_MODULE_9__["NguCarouselModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
+                _app_routing__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
+                _ngu_carousel__WEBPACK_IMPORTED_MODULE_10__["NguCarouselModule"],
             ],
             providers: [
-                _services_theme_service__WEBPACK_IMPORTED_MODULE_13__["ThemeService"]
+                _services_theme_service__WEBPACK_IMPORTED_MODULE_14__["ThemeService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -1720,7 +1729,7 @@ var ListMenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (closeEvent)=\"menuClose($event)\"></list-menu-component>\r\n\r\n<guide-component\r\n  *ngIf=\"guideState\"\r\n  (closeEvent)=\"guideClose($event)\"></guide-component>\r\n\r\n<detail-component\r\n  [item]=\"detailActiveItem\"\r\n  [theme]=\"detailActiveTheme\"\r\n  *ngIf=\"detailState\"\r\n  (closeEvent)=\"detailClose($event)\"></detail-component>\r\n\r\n<div class=\"content\" [ngClass]=\"{'hold': contentState, 'out':!contentState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <div \r\n      class=\"guide-icon-wrapper\"\r\n      (click)=\"guideOpen($event)\">\r\n      <div class=\"inner-wrapper\">\r\n        <img class=\"guide-circle\" src=\"assets/img/list-circle.svg\">\r\n        <img #arrow class=\"guide-arrow\" src=\"assets/img/list-down-arrow.svg\">\r\n      </div>\r\n    </div>\r\n    <img \r\n      class=\"search-icon\" \r\n      src=\"assets/img/list-search-icon.svg\">\r\n    <img \r\n      class=\"menu-icon\" \r\n      (click)=\"menuOpen($event)\" \r\n      src=\"assets/img/list-menu-icon.svg\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        {{bigNumberText}}\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" [style.color]=\"currentTheme.color\" #nameB>\r\n          {{currentTheme.bigLabel}}\r\n        </strong>\r\n        <span class=\"fadeIn\" #nameSky>{{currentTheme.smallLabel}}</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img \r\n      #weatherLogo\r\n      class=\"weather-logo fadeInRight\" \r\n      [src]=\"currentTheme.path\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      {{currentTheme.comment}}\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\" \r\n      (click)=\"detailOpen(item)\" \r\n      *ngFor=\"let item of activeIcon.list\">\r\n      <div class=\"icon\" [innerHTML]=\"item.code\"></div>\r\n      <div class=\"name\">{{item.name}}</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
+module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (closeEvent)=\"menuClose($event)\"></list-menu-component>\r\n\r\n<guide-component\r\n  *ngIf=\"guideState\"\r\n  (closeEvent)=\"guideClose($event)\"></guide-component>\r\n\r\n<detail-component\r\n  [item]=\"detailActiveItem\"\r\n  [theme]=\"detailActiveTheme\"\r\n  *ngIf=\"detailState\"\r\n  (closeEvent)=\"detailClose($event)\"></detail-component>\r\n\r\n<div \r\n  class=\"content\"  \r\n  (click)=\"contentClick($event)\"\r\n  [ngClass]=\"{'hold': contentState, 'out':!contentState}\">\r\n\r\n  <div class=\"header-wrapper fadeIn animated\">\r\n    <div \r\n      class=\"guide-icon-wrapper\"\r\n      (click)=\"guideOpen($event)\">\r\n      <img class=\"guide-circle\" src=\"assets/img/list-circle.svg\">\r\n      <img #arrow class=\"guide-arrow\" src=\"assets/img/list-down-arrow.svg\">\r\n    </div>\r\n    <img \r\n      #searchIcon\r\n      (click)=\"searchActive($event)\"\r\n      class=\"search-icon\" \r\n      src=\"assets/img/list-search-icon.svg\">\r\n    <img \r\n      class=\"menu-icon\" \r\n      (click)=\"menuOpen($event)\" \r\n      src=\"assets/img/list-menu-icon.svg\">\r\n    <input \r\n      #searchInput\r\n      class=\"search-input\" \r\n      [(ngModel)]=\"searchText\" \r\n      (ngModelChange)=\"search($event)\" \r\n      type=\"text\">\r\n  </div>\r\n\r\n  <div class=\"logo-wrapper\">\r\n\r\n    <div class=\"name-panel\">\r\n      <div class=\"big-number fadeInLeft delay-md\" #bigNumber>\r\n        {{bigNumberText}}\r\n      </div>\r\n      <div class=\"name-box\">\r\n        <strong class=\"fadeIn\" [style.color]=\"currentTheme.color\" #nameB>\r\n          {{currentTheme.bigLabel}}\r\n        </strong>\r\n        <span class=\"fadeIn\" #nameSky>{{currentTheme.smallLabel}}</span>\r\n      </div>\r\n    </div>\r\n\r\n    <img \r\n      #weatherLogo\r\n      class=\"weather-logo fadeInRight\" \r\n      [src]=\"currentTheme.path\">\r\n\r\n  </div>\r\n\r\n  <div class=\"info-wrapper fadeIn\" #infoWrapper>\r\n    <p>\r\n      {{currentTheme.comment}}\r\n    </p>\r\n  </div>\r\n\r\n  <div class=\"list-wrapper fadeInUp animated\">\r\n    <div class=\"item-wrapper\" \r\n      (click)=\"detailOpen(item)\" \r\n      *ngFor=\"let item of filteredList\">\r\n      <div class=\"icon\" [innerHTML]=\"item.code\"></div>\r\n      <div class=\"name\">{{item.name}}</div>\r\n    </div>\r\n  </div>\r\n  \r\n</div>"
 
 /***/ }),
 
@@ -1731,7 +1740,7 @@ module.exports = "\r\n<list-menu-component \r\n  *ngIf=\"menuState\" \r\n  (clos
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@-webkit-keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@-webkit-keyframes icon-wrapper-effect {\n  0% {\n    top: -6vh; }\n  40% {\n    top: 8.8vh; }\n  100% {\n    top: 6vh; } }\n\n@keyframes icon-wrapper-effect {\n  0% {\n    top: -6vh; }\n  40% {\n    top: 8.8vh; }\n  100% {\n    top: 6vh; } }\n\n@-webkit-keyframes circle-effect {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  30% {\n    -webkit-transform: rotate(-30deg);\n            transform: rotate(-30deg); }\n  60% {\n    -webkit-transform: rotate(20deg);\n            transform: rotate(20deg); }\n  100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); } }\n\n@keyframes circle-effect {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  30% {\n    -webkit-transform: rotate(-30deg);\n            transform: rotate(-30deg); }\n  60% {\n    -webkit-transform: rotate(20deg);\n            transform: rotate(20deg); }\n  100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); } }\n\n@-webkit-keyframes arrow-effect {\n  0% {\n    margin-top: -1.6vw; }\n  40% {\n    margin-top: 0vw; }\n  100% {\n    margin-top: -1.6vw; } }\n\n@keyframes arrow-effect {\n  0% {\n    margin-top: -1.6vw; }\n  40% {\n    margin-top: 0vw; }\n  100% {\n    margin-top: -1.6vw; } }\n\n.content {\n  height: 100%; }\n\n.content.hold {\n    overflow: hidden;\n    -webkit-animation: blur-in-effect 1s;\n            animation: blur-in-effect 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.content.out {\n    -webkit-animation: blur-out-effect 0.3s;\n            animation: blur-out-effect 0.3s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n\n.content .header-wrapper {\n    padding: 6vh;\n    width: 100%;\n    text-align: right;\n    position: relative; }\n\n.content .header-wrapper .guide-icon-wrapper {\n      position: absolute;\n      top: -6vh;\n      left: 10.6vw;\n      text-align: center;\n      width: 10.6vw;\n      height: 10.6vw;\n      -webkit-animation: icon-wrapper-effect 1s;\n              animation: icon-wrapper-effect 1s;\n      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper {\n        position: relative;\n        width: 100%;\n        height: 100%; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img {\n          position: absolute; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-circle {\n            top: 0;\n            left: 0;\n            width: 10.6vw;\n            height: 10.6vw;\n            -webkit-animation: circle-effect 0.5s;\n                    animation: circle-effect 0.5s;\n            -webkit-animation-fill-mode: forwards;\n                    animation-fill-mode: forwards;\n            -webkit-animation-delay: 3s;\n                    animation-delay: 3s; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-arrow {\n            width: 5.3vw;\n            height: 3.1vw;\n            left: 50%;\n            top: 50%;\n            margin-left: -2.7vw;\n            margin-top: -1.6vw; }\n\n.content .header-wrapper .guide-icon-wrapper .inner-wrapper img.guide-arrow.active {\n              -webkit-animation: arrow-effect 0.5s;\n                      animation: arrow-effect 0.5s;\n              -webkit-animation-fill-mode: forwards;\n                      animation-fill-mode: forwards; }\n\n.content .header-wrapper img {\n      vertical-align: middle; }\n\n.content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw; }\n\n.content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n\n.content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 4vh; }\n\n.content .logo-wrapper .name-panel {\n      float: left; }\n\n.content .logo-wrapper .name-panel .big-number {\n        text-align: left;\n        text-indent: -1.9vw;\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n\n.content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n\n.content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n\n.content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n\n.content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n\n.content .list-wrapper {\n    text-align: center;\n    width: 94.4vw;\n    margin: 0 auto; }\n\n.content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n\n.content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n\n.content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); } }\n\n@-webkit-keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@keyframes blur-out-effect {\n  0% {\n    filter: blur(7px);\n    -webkit-filter: blur(7px);\n    -moz-filter: blur(7px);\n    -o-filter: blur(7px);\n    -ms-filter: blur(7px); }\n  100% {\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); } }\n\n@-webkit-keyframes icon-wrapper-effect {\n  0% {\n    top: -3.1vh; }\n  40% {\n    top: 4.6vh; }\n  100% {\n    top: 3.1vh; } }\n\n@keyframes icon-wrapper-effect {\n  0% {\n    top: -3.1vh; }\n  40% {\n    top: 4.6vh; }\n  100% {\n    top: 3.1vh; } }\n\n@-webkit-keyframes circle-effect {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  30% {\n    -webkit-transform: rotate(-30deg);\n            transform: rotate(-30deg); }\n  60% {\n    -webkit-transform: rotate(20deg);\n            transform: rotate(20deg); }\n  100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); } }\n\n@keyframes circle-effect {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  30% {\n    -webkit-transform: rotate(-30deg);\n            transform: rotate(-30deg); }\n  60% {\n    -webkit-transform: rotate(20deg);\n            transform: rotate(20deg); }\n  100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); } }\n\n@-webkit-keyframes arrow-effect {\n  0% {\n    margin-top: -1.6vw; }\n  40% {\n    margin-top: 0vw; }\n  100% {\n    margin-top: -1.6vw; } }\n\n@keyframes arrow-effect {\n  0% {\n    margin-top: -1.6vw; }\n  40% {\n    margin-top: 0vw; }\n  100% {\n    margin-top: -1.6vw; } }\n\n@-webkit-keyframes input-effect {\n  0% {\n    opacity: 0;\n    z-index: -1; }\n  100% {\n    z-index: 3;\n    opacity: 1; } }\n\n@keyframes input-effect {\n  0% {\n    opacity: 0;\n    z-index: -1; }\n  100% {\n    z-index: 3;\n    opacity: 1; } }\n\n@-webkit-keyframes input-back-effect {\n  0% {\n    z-index: 3;\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    z-index: -1; } }\n\n@keyframes input-back-effect {\n  0% {\n    z-index: 3;\n    opacity: 1; }\n  100% {\n    opacity: 0;\n    z-index: -1; } }\n\n@-webkit-keyframes search-icon-effect {\n  0% {\n    position: relative;\n    width: 10.6vw;\n    top: 0;\n    left: 0; }\n  100% {\n    position: relative;\n    width: 6.9vw;\n    top: 0.9vw;\n    left: 10vw;\n    z-index: 10; } }\n\n@keyframes search-icon-effect {\n  0% {\n    position: relative;\n    width: 10.6vw;\n    top: 0;\n    left: 0; }\n  100% {\n    position: relative;\n    width: 6.9vw;\n    top: 0.9vw;\n    left: 10vw;\n    z-index: 10; } }\n\n@-webkit-keyframes search-icon-back-effect {\n  0% {\n    position: relative;\n    width: 6.9vw;\n    top: 0.9vw;\n    left: 10vw;\n    z-index: 10; }\n  100% {\n    position: relative;\n    width: 10.6vw;\n    top: 0;\n    left: 0; } }\n\n@keyframes search-icon-back-effect {\n  0% {\n    position: relative;\n    width: 6.9vw;\n    top: 0.9vw;\n    left: 10vw;\n    z-index: 10; }\n  100% {\n    position: relative;\n    width: 10.6vw;\n    top: 0;\n    left: 0; } }\n\n.content {\n  height: 100%; }\n\n.content.hold {\n    overflow: hidden;\n    -webkit-animation: blur-in-effect 1s;\n            animation: blur-in-effect 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards; }\n\n.content.out {\n    -webkit-animation: blur-out-effect 0.3s;\n            animation: blur-out-effect 0.3s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n\n.content .header-wrapper {\n    padding: 3.1vh;\n    width: 100%;\n    text-align: right;\n    position: relative; }\n\n.content .header-wrapper .guide-icon-wrapper {\n      position: absolute;\n      top: -3.1vh;\n      left: 10.6vw;\n      text-align: center;\n      width: 10.6vw;\n      height: 10.6vw;\n      -webkit-animation: icon-wrapper-effect 1s;\n              animation: icon-wrapper-effect 1s;\n      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 2s;\n              animation-delay: 2s; }\n\n.content .header-wrapper .guide-icon-wrapper img {\n        position: absolute; }\n\n.content .header-wrapper .guide-icon-wrapper img.guide-circle {\n          top: 0;\n          left: 0;\n          width: 10.6vw;\n          height: 10.6vw;\n          -webkit-animation: circle-effect 0.5s;\n                  animation: circle-effect 0.5s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 3s;\n                  animation-delay: 3s; }\n\n.content .header-wrapper .guide-icon-wrapper img.guide-arrow {\n          width: 5.3vw;\n          height: 3.1vw;\n          left: 50%;\n          top: 50%;\n          margin-left: -2.7vw;\n          margin-top: -1.6vw; }\n\n.content .header-wrapper .guide-icon-wrapper img.guide-arrow.active {\n            -webkit-animation: arrow-effect 0.5s;\n                    animation: arrow-effect 0.5s;\n            -webkit-animation-fill-mode: forwards;\n                    animation-fill-mode: forwards; }\n\n.content .header-wrapper img {\n      vertical-align: middle; }\n\n.content .header-wrapper img.search-icon {\n        margin-right: 5vw;\n        width: 10.6vw;\n        position: relative;\n        z-index: 10; }\n\n.content .header-wrapper img.search-icon.active {\n          -webkit-animation: search-icon-effect 0.5s;\n                  animation: search-icon-effect 0.5s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards; }\n\n.content .header-wrapper img.search-icon.deactive {\n          -webkit-animation: search-icon-back-effect 0.5s;\n                  animation: search-icon-back-effect 0.5s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards; }\n\n.content .header-wrapper img.menu-icon {\n        width: 8.8vw; }\n\n.content .header-wrapper .search-input {\n      position: absolute;\n      width: 78.8vw;\n      height: 11.9vw;\n      left: 10.6vw;\n      top: 10vw;\n      padding: 2.8vw 3.4vw;\n      box-sizing: border-box;\n      color: #9b9b9b;\n      border: 1px solid #d9d9d9;\n      opacity: 0;\n      z-index: -1; }\n\n.content .header-wrapper .search-input.active {\n        -webkit-animation: input-effect 0.5s;\n                animation: input-effect 0.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .header-wrapper .search-input.deactive {\n        -webkit-animation: input-back-effect 0.5s;\n                animation: input-back-effect 0.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .logo-wrapper {\n    overflow: hidden;\n    position: relative;\n    padding: 0 10.6vw;\n    margin-bottom: 2.1vh; }\n\n.content .logo-wrapper .name-panel {\n      float: left; }\n\n.content .logo-wrapper .name-panel .big-number {\n        text-align: left;\n        text-indent: -1.9vw;\n        font-size: 31.3vw;\n        color: #4a4a4a; }\n\n.content .logo-wrapper .name-panel .name-box strong {\n        font-family: 'DevanagariSangamMN-Bold';\n        font-size: 9.4vw;\n        font-weight: 600;\n        margin-right: 2.2vw;\n        -webkit-animation-delay: 2s;\n        animation-delay: 2s; }\n\n.content .logo-wrapper .name-panel .name-box span {\n        font-family: 'DevanagariSangamMN';\n        font-size: 9.4vw;\n        color: #4a4a4a;\n        -webkit-animation-delay: 2.5s;\n        animation-delay: 2.5s; }\n\n.content .logo-wrapper .weather-logo {\n      position: absolute;\n      right: 10.6vw;\n      bottom: 1.6vw;\n      width: 15vw;\n      height: 15vw;\n      -webkit-animation-delay: 1.5s;\n      animation-delay: 1.5s; }\n\n.content .info-wrapper {\n    overflow: hidden;\n    padding: 0 10.6vw;\n    font-size: 4.1vw;\n    color: #9b9b9b;\n    letter-spacing: -1px;\n    text-align: right;\n    margin-bottom: 11.3vw;\n    -webkit-animation-delay: 3s;\n    animation-delay: 3s; }\n\n.content .list-wrapper {\n    width: 94.4vw;\n    margin: 0 auto; }\n\n.content .list-wrapper .item-wrapper {\n      display: inline-block;\n      position: relative;\n      text-align: center;\n      width: 25%;\n      height: 12.5vw;\n      margin-bottom: 9.4vw; }\n\n.content .list-wrapper .item-wrapper .icon {\n        font-size: 7.8vw; }\n\n.content .list-wrapper .item-wrapper .name {\n        position: absolute;\n        top: 9.4vw;\n        left: 50%;\n        width: 15.6vw;\n        margin-left: -7.8vw;\n        font-size: 2.5vw;\n        color: #4a4a4a;\n        word-wrap: break-word; }\n"
 
 /***/ }),
 
@@ -1773,6 +1782,7 @@ var ListPage = /** @class */ (function () {
         this.menuState = false;
         this.guideState = false;
         this.detailState = false;
+        this.searchInputState = false;
         this.detailActiveItem = "";
         this.detailActiveTheme = "";
         this.bigNumberText = "";
@@ -1789,6 +1799,7 @@ var ListPage = /** @class */ (function () {
     ListPage.prototype.changeActiveIcon = function (themeName, theme) {
         this.activeIcon.themeName = "gonicon-" + themeName + "-" + theme;
         this.activeIcon.list = _icons__WEBPACK_IMPORTED_MODULE_3__["icons"][themeName][theme];
+        this.filteredList = this.activeIcon.list;
     };
     ListPage.prototype.ngAfterViewInit = function () {
         this.renderer.addClass(this.bigNumber.nativeElement, 'animated');
@@ -1843,6 +1854,49 @@ var ListPage = /** @class */ (function () {
         this.detailState = false;
         this.contentState = false;
     };
+    ListPage.prototype.search = function (e) {
+        this.filteredList = e.trim()
+            ? this.activeIcon.list.filter(function (ele) { return ele.name.match(e.trim()); })
+            : this.activeIcon.list;
+    };
+    ListPage.prototype.searchActive = function (e) {
+        var _this = this;
+        if (this.searchIcon.nativeElement.classList.contains('active'))
+            return false;
+        rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].of([''])
+            .do(function () {
+            _this.searchIcon.nativeElement.classList.add('active');
+            _this.searchInput.nativeElement.classList.add('active');
+        })
+            .delay(500)
+            .subscribe(function (res) {
+            _this.searchInputState = true;
+        });
+    };
+    ListPage.prototype.searchDeactive = function () {
+        var _this = this;
+        if (!this.searchIcon.nativeElement.classList.contains('active'))
+            return false;
+        rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].of([''])
+            .do(function () {
+            _this.searchIcon.nativeElement.classList.remove('active');
+            _this.searchInput.nativeElement.classList.remove('active');
+            _this.searchIcon.nativeElement.classList.add('deactive');
+            _this.searchInput.nativeElement.classList.add('deactive');
+            _this.searchInputState = false;
+        })
+            .delay(500)
+            .subscribe(function (res) {
+            _this.searchIcon.nativeElement.classList.remove('deactive');
+            _this.searchInput.nativeElement.classList.remove('deactive');
+        });
+    };
+    ListPage.prototype.contentClick = function (e) {
+        if (this.searchInput.nativeElement != e.target && this.searchInputState) {
+            console.log("test");
+            this.searchDeactive();
+        }
+    };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('bigNumber'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
@@ -1867,6 +1921,14 @@ var ListPage = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('arrow'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
     ], ListPage.prototype, "arrow", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('searchIcon'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], ListPage.prototype, "searchIcon", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('searchInput'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], ListPage.prototype, "searchInput", void 0);
     ListPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'list-page',
@@ -1884,38 +1946,38 @@ var ListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/main/main.html":
-/*!**************************************!*\
-  !*** ./src/app/pages/main/main.html ***!
-  \**************************************/
+/***/ "./src/app/pages/main/desk/main-desk.html":
+/*!************************************************!*\
+  !*** ./src/app/pages/main/desk/main-desk.html ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\" #content>\r\n\r\n  <div class=\"button-wrapper\" #buttonWrapper>\r\n    <div class=\"button-inner-wrapper\">\r\n      <div class=\"dot\" #dot></div>\r\n      <button type=\"button\" #startButton>\r\n        <span>시작하기</span>\r\n        <img src=\"assets/img/main-right-arrow.svg\">\r\n      </button>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
+module.exports = "<div class=\"content\" #content>\r\n  <div #arrowWrapper class=\"arrow-wrapper\" (click)=\"start($event)\">\r\n    <div class=\"dot\"></div>\r\n    <img class=\"circle\" src=\"assets/img/main-desk-circle.svg\">\r\n    <img class=\"arrow\" src=\"assets/img/main-desk-arrow.svg\">\r\n  </div>\r\n  <div class=\"start-wrapper\">\r\n    <img src=\"assets/img/main-desk-logo.svg\">\r\n  </div>\r\n  \r\n</div>"
 
 /***/ }),
 
-/***/ "./src/app/pages/main/main.scss":
-/*!**************************************!*\
-  !*** ./src/app/pages/main/main.scss ***!
-  \**************************************/
+/***/ "./src/app/pages/main/desk/main-desk.scss":
+/*!************************************************!*\
+  !*** ./src/app/pages/main/desk/main-desk.scss ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@-webkit-keyframes start-effect {\n  0% {\n    border: 2.5px solid rgba(234, 0, 118, 0); }\n  100% {\n    border: 2.5px solid #ea0076; } }\n\n@keyframes start-effect {\n  0% {\n    border: 2.5px solid rgba(234, 0, 118, 0); }\n  100% {\n    border: 2.5px solid #ea0076; } }\n\n@-webkit-keyframes dot-effect {\n  0% {\n    background-color: rgba(74, 189, 229, 0); }\n  100% {\n    background-color: #4abde5; } }\n\n@keyframes dot-effect {\n  0% {\n    background-color: rgba(74, 189, 229, 0); }\n  100% {\n    background-color: #4abde5; } }\n\n@-webkit-keyframes span-effect {\n  0% {\n    width: 21.9vw; }\n  100% {\n    width: 0vw; } }\n\n@keyframes span-effect {\n  0% {\n    width: 21.9vw; }\n  100% {\n    width: 0vw; } }\n\n@-webkit-keyframes img-effect {\n  0% {\n    left: 0;\n    margin-left: 0; }\n  20% {\n    left: -0.6vw;\n    margin-left: 0; }\n  60% {\n    left: -0.6vw;\n    margin-left: 0; }\n  99% {\n    left: 100vw;\n    opacity: 1; }\n  100% {\n    left: 100vw;\n    opacity: 0; } }\n\n@keyframes img-effect {\n  0% {\n    left: 0;\n    margin-left: 0; }\n  20% {\n    left: -0.6vw;\n    margin-left: 0; }\n  60% {\n    left: -0.6vw;\n    margin-left: 0; }\n  99% {\n    left: 100vw;\n    opacity: 1; }\n  100% {\n    left: 100vw;\n    opacity: 0; } }\n\n@-webkit-keyframes wrapper-effect {\n  0% {\n    left: 50%;\n    margin-left: -23.8vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 47.5vw; }\n  20% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  40% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  100% {\n    -webkit-transform: rotate(720deg);\n            transform: rotate(720deg);\n    width: 16.9vw;\n    left: 100%;\n    margin-left: 0px; } }\n\n@keyframes wrapper-effect {\n  0% {\n    left: 50%;\n    margin-left: -23.8vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 47.5vw; }\n  20% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  40% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  100% {\n    -webkit-transform: rotate(720deg);\n            transform: rotate(720deg);\n    width: 16.9vw;\n    left: 100%;\n    margin-left: 0px; } }\n\n.content {\n  height: 100%;\n  min-height: 177.5vw;\n  overflow: hidden;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  position: relative; }\n\n.content.blur {\n    -webkit-animation-name: blur-in-effect;\n            animation-name: blur-in-effect;\n    -webkit-animation-duration: 1s;\n            animation-duration: 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-delay: 4.5s;\n    animation-delay: 4.5s; }\n\n.content .button-wrapper {\n    position: absolute;\n    bottom: 6vh;\n    left: 50%;\n    margin-left: -23.8vw;\n    width: 47.5vw;\n    height: 16.9vw; }\n\n.content .button-wrapper.start {\n      -webkit-animation-name: wrapper-effect;\n              animation-name: wrapper-effect;\n      -webkit-animation-duration: 3s;\n              animation-duration: 3s;\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s; }\n\n.content .button-wrapper.start .button-inner-wrapper .dot {\n        -webkit-animation-name: dot-effect;\n                animation-name: dot-effect;\n        -webkit-animation-duration: 1.5s;\n                animation-duration: 1.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .button-wrapper.start .button-inner-wrapper button {\n        -webkit-animation-name: start-effect;\n                animation-name: start-effect;\n        -webkit-animation-duration: 1.5s;\n                animation-duration: 1.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .button-wrapper.start .button-inner-wrapper button span {\n          -webkit-animation-name: span-effect;\n                  animation-name: span-effect;\n          -webkit-animation-duration: 0.2s;\n                  animation-duration: 0.2s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 1.5s;\n                  animation-delay: 1.5s; }\n\n.content .button-wrapper.start .button-inner-wrapper button img {\n          -webkit-animation-name: img-effect;\n                  animation-name: img-effect;\n          -webkit-animation-duration: 1s;\n                  animation-duration: 1s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 1.5s;\n                  animation-delay: 1.5s; }\n\n.content .button-wrapper .button-inner-wrapper {\n      width: 100%;\n      height: 100%;\n      position: relative; }\n\n.content .button-wrapper .button-inner-wrapper .dot {\n        position: absolute;\n        width: 2.4vw;\n        height: 2.4vw;\n        border-radius: 50%;\n        right: 1.6vw;\n        top: 1.6vw; }\n\n.content .button-wrapper .button-inner-wrapper button {\n        background-color: #fff5fa;\n        color: #ea0076;\n        width: 100%;\n        height: 100%;\n        border: 0;\n        border-radius: 8.4vw;\n        font-weight: 600;\n        font-size: 5.3vw; }\n\n.content .button-wrapper .button-inner-wrapper button span {\n          font-size: 5.3vw;\n          display: inline-block;\n          width: 21.9vw;\n          height: 6.3vw;\n          overflow: hidden; }\n\n.content .button-wrapper .button-inner-wrapper button img {\n          display: inline-block;\n          background-color: #fff5fa;\n          height: 5.6vw;\n          margin-left: 3.1vw;\n          position: relative;\n          top: 0.3vw; }\n\n.content .button-wrapper .button-inner-wrapper button:focus {\n        outline: none; }\n"
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes dot {\n  0% {\n    top: -0.5vw;\n    margin-top: 0vw;\n    left: 50%;\n    margin-left: -0.5vw;\n    width: 1vw;\n    height: 1vw;\n    background-color: #4abde5; }\n  60% {\n    top: 50%;\n    margin-top: 0.5vw;\n    left: 50%;\n    margin-left: -0.5vw;\n    width: 1vw;\n    height: 1vw;\n    background-color: #4abde5; }\n  90% {\n    top: 50%;\n    margin-top: -0.5vw;\n    left: 50%;\n    margin-left: -0.5vw;\n    width: 1vw;\n    height: 1vw;\n    background-color: #4abde5; }\n  100% {\n    top: 50%;\n    margin-top: -9.7vw;\n    left: 50%;\n    margin-left: -9.7vw;\n    width: 19.4vw;\n    height: 19.4vw;\n    background-color: #FFFFFF; } }\n\n@keyframes dot {\n  0% {\n    top: -0.5vw;\n    margin-top: 0vw;\n    left: 50%;\n    margin-left: -0.5vw;\n    width: 1vw;\n    height: 1vw;\n    background-color: #4abde5; }\n  60% {\n    top: 50%;\n    margin-top: 0.5vw;\n    left: 50%;\n    margin-left: -0.5vw;\n    width: 1vw;\n    height: 1vw;\n    background-color: #4abde5; }\n  90% {\n    top: 50%;\n    margin-top: -0.5vw;\n    left: 50%;\n    margin-left: -0.5vw;\n    width: 1vw;\n    height: 1vw;\n    background-color: #4abde5; }\n  100% {\n    top: 50%;\n    margin-top: -9.7vw;\n    left: 50%;\n    margin-left: -9.7vw;\n    width: 19.4vw;\n    height: 19.4vw;\n    background-color: #FFFFFF; } }\n\n@-webkit-keyframes arrow-wrapper {\n  0% {\n    width: 19.4vw;\n    height: 19.4vw;\n    top: 50%;\n    left: 50%;\n    margin-top: -9.7vw;\n    margin-left: -9.7vw; }\n  100% {\n    width: 0vw;\n    height: 0vw;\n    top: 50%;\n    left: 50%;\n    margin-top: 0vw;\n    margin-left: 0vw; } }\n\n@keyframes arrow-wrapper {\n  0% {\n    width: 19.4vw;\n    height: 19.4vw;\n    top: 50%;\n    left: 50%;\n    margin-top: -9.7vw;\n    margin-left: -9.7vw; }\n  100% {\n    width: 0vw;\n    height: 0vw;\n    top: 50%;\n    left: 50%;\n    margin-top: 0vw;\n    margin-left: 0vw; } }\n\n.content {\n  height: 100vh;\n  width: 100vw; }\n\n.content .arrow-wrapper {\n    width: 19.4vw;\n    height: 19.4vw;\n    margin: 0 auto;\n    border-radius: 50%;\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -9.7vw;\n    margin-left: -9.7vw;\n    background-color: #FFFFFF;\n    z-index: 10;\n    overflow: hidden; }\n\n.content .arrow-wrapper.active {\n      -webkit-animation: arrow-wrapper 0.5s;\n              animation: arrow-wrapper 0.5s;\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 1.2s;\n              animation-delay: 1.2s; }\n\n.content .arrow-wrapper.active .dot {\n        -webkit-animation: dot 1s;\n                animation: dot 1s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .arrow-wrapper .dot {\n      width: 1vw;\n      height: 1vw;\n      border-radius: 50%;\n      background-color: #4abde5;\n      border: 1px solid #4abde5;\n      position: absolute;\n      top: -0.5vw;\n      left: 50%;\n      margin-left: -0.5vw;\n      z-index: 20; }\n\n.content .arrow-wrapper .circle {\n      width: 19.4vw;\n      position: relative;\n      left: 0; }\n\n.content .arrow-wrapper .arrow {\n      position: absolute;\n      height: 5.2vw;\n      width: 2.8vw;\n      margin-left: -1vw;\n      margin-top: -2.6vw;\n      top: 50%;\n      left: 50%; }\n\n.content .start-wrapper {\n    width: 19.4vw;\n    height: 19.4vw;\n    background-color: #ea0076;\n    margin: 0 auto;\n    border-radius: 50%;\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    left: 50%;\n    margin-top: -9.7vw;\n    margin-left: -9.7vw;\n    z-index: 1; }\n\n.content .start-wrapper img {\n      position: relative;\n      height: 4.2vw;\n      top: 50%;\n      margin-top: -2.6vw; }\n"
 
 /***/ }),
 
-/***/ "./src/app/pages/main/main.ts":
-/*!************************************!*\
-  !*** ./src/app/pages/main/main.ts ***!
-  \************************************/
-/*! exports provided: MainPage */
+/***/ "./src/app/pages/main/desk/main-desk.ts":
+/*!**********************************************!*\
+  !*** ./src/app/pages/main/desk/main-desk.ts ***!
+  \**********************************************/
+/*! exports provided: MainPageDesk */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainPage", function() { return MainPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainPageDesk", function() { return MainPageDesk; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
@@ -1932,16 +1994,176 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+var MainPageDesk = /** @class */ (function () {
+    function MainPageDesk(router, renterer) {
+        this.router = router;
+        this.renterer = renterer;
+    }
+    MainPageDesk.prototype.ngOnInit = function () { };
+    MainPageDesk.prototype.ngAfterViewInit = function () { };
+    MainPageDesk.prototype.ngOnDestroy = function () { };
+    MainPageDesk.prototype.start = function (e) {
+        var _this = this;
+        rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].of([''])
+            .do(function () {
+            _this.arrowWrapper.nativeElement.classList.add('active');
+        })
+            .delay(2000)
+            .subscribe(function (res) {
+            _this.router.navigate(['/list']);
+        });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('arrowWrapper'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], MainPageDesk.prototype, "arrowWrapper", void 0);
+    MainPageDesk = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'main-desk-page',
+            template: __webpack_require__(/*! ./main-desk.html */ "./src/app/pages/main/desk/main-desk.html"),
+            styles: [__webpack_require__(/*! ./main-desk.scss */ "./src/app/pages/main/desk/main-desk.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], MainPageDesk);
+    return MainPageDesk;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/main/main.html":
+/*!**************************************!*\
+  !*** ./src/app/pages/main/main.html ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<main-m-page class=\"main-mobile\"></main-m-page>\r\n<main-desk-page class=\"main-desk\"></main-desk-page>"
+
+/***/ }),
+
+/***/ "./src/app/pages/main/main.scss":
+/*!**************************************!*\
+  !*** ./src/app/pages/main/main.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@media (max-width: 480px) {\n  .main-desk {\n    display: none; } }\n\n@media (min-width: 481px) {\n  .main-mobile {\n    display: none; } }\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/main/main.ts":
+/*!************************************!*\
+  !*** ./src/app/pages/main/main.ts ***!
+  \************************************/
+/*! exports provided: MainPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainPage", function() { return MainPage; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+// ng build --base-href https://go-eun.github.io --deploy-url https://go-eun.github.io/
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 var MainPage = /** @class */ (function () {
     function MainPage(router, renterer) {
+        this.router = router;
+        this.renterer = renterer;
+    }
+    MainPage.prototype.ngOnInit = function () { };
+    MainPage.prototype.ngAfterViewInit = function () { };
+    MainPage.prototype.ngOnDestroy = function () { };
+    MainPage = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'main-page',
+            template: __webpack_require__(/*! ./main.html */ "./src/app/pages/main/main.html"),
+            styles: [__webpack_require__(/*! ./main.scss */ "./src/app/pages/main/main.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
+    ], MainPage);
+    return MainPage;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pages/main/mobile/main-m.html":
+/*!***********************************************!*\
+  !*** ./src/app/pages/main/mobile/main-m.html ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content\" #content>\r\n\r\n  <div class=\"button-wrapper\" #buttonWrapper>\r\n    <div class=\"button-inner-wrapper\">\r\n      <div class=\"dot\" #dot></div>\r\n      <button type=\"button\" #startButton>\r\n        <span>시작하기</span>\r\n        <img src=\"assets/img/main-right-arrow.svg\">\r\n      </button>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/pages/main/mobile/main-m.scss":
+/*!***********************************************!*\
+  !*** ./src/app/pages/main/mobile/main-m.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "@-webkit-keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fade-out {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fade-in {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@keyframes back-fade-in {\n  0% {\n    background-color: rgba(255, 255, 255, 0); }\n  100% {\n    background-color: rgba(255, 255, 255, 0.9); } }\n\n@-webkit-keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@keyframes blur-in-effect {\n  0% {\n    opacity: 1;\n    filter: blur(0px);\n    -webkit-filter: blur(0px);\n    -moz-filter: blur(0px);\n    -o-filter: blur(0px);\n    -ms-filter: blur(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(40px);\n    -webkit-filter: blur(40px);\n    -moz-filter: blur(40px);\n    -o-filter: blur(40px);\n    -ms-filter: blur(40px); } }\n\n@-webkit-keyframes start-effect {\n  0% {\n    border: 2.5px solid rgba(234, 0, 118, 0); }\n  100% {\n    border: 2.5px solid #ea0076; } }\n\n@keyframes start-effect {\n  0% {\n    border: 2.5px solid rgba(234, 0, 118, 0); }\n  100% {\n    border: 2.5px solid #ea0076; } }\n\n@-webkit-keyframes dot-effect {\n  0% {\n    background-color: rgba(74, 189, 229, 0); }\n  100% {\n    background-color: #4abde5; } }\n\n@keyframes dot-effect {\n  0% {\n    background-color: rgba(74, 189, 229, 0); }\n  100% {\n    background-color: #4abde5; } }\n\n@-webkit-keyframes span-effect {\n  0% {\n    width: 21.9vw; }\n  100% {\n    width: 0vw; } }\n\n@keyframes span-effect {\n  0% {\n    width: 21.9vw; }\n  100% {\n    width: 0vw; } }\n\n@-webkit-keyframes img-effect {\n  0% {\n    left: 0;\n    margin-left: 0; }\n  20% {\n    left: -0.6vw;\n    margin-left: 0; }\n  60% {\n    left: -0.6vw;\n    margin-left: 0; }\n  99% {\n    left: 100vw;\n    opacity: 1; }\n  100% {\n    left: 100vw;\n    opacity: 0; } }\n\n@keyframes img-effect {\n  0% {\n    left: 0;\n    margin-left: 0; }\n  20% {\n    left: -0.6vw;\n    margin-left: 0; }\n  60% {\n    left: -0.6vw;\n    margin-left: 0; }\n  99% {\n    left: 100vw;\n    opacity: 1; }\n  100% {\n    left: 100vw;\n    opacity: 0; } }\n\n@-webkit-keyframes wrapper-effect {\n  0% {\n    left: 50%;\n    margin-left: -23.8vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 47.5vw; }\n  20% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  40% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  100% {\n    -webkit-transform: rotate(720deg);\n            transform: rotate(720deg);\n    width: 16.9vw;\n    left: 100%;\n    margin-left: 0px; } }\n\n@keyframes wrapper-effect {\n  0% {\n    left: 50%;\n    margin-left: -23.8vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 47.5vw; }\n  20% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  40% {\n    left: 30%;\n    margin-left: -8.4vw;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    width: 16.9vw; }\n  100% {\n    -webkit-transform: rotate(720deg);\n            transform: rotate(720deg);\n    width: 16.9vw;\n    left: 100%;\n    margin-left: 0px; } }\n\n.content {\n  height: 100%;\n  min-height: 177.5vw;\n  overflow: hidden;\n  background-image: url('https://go-eun.github.io/main-background.svg');\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  position: relative; }\n\n.content.blur {\n    -webkit-animation-name: blur-in-effect;\n            animation-name: blur-in-effect;\n    -webkit-animation-duration: 1s;\n            animation-duration: 1s;\n    -webkit-animation-fill-mode: forwards;\n            animation-fill-mode: forwards;\n    -webkit-animation-delay: 4.5s;\n    animation-delay: 4.5s; }\n\n.content .button-wrapper {\n    position: absolute;\n    bottom: 3.1vh;\n    left: 50%;\n    margin-left: -23.8vw;\n    width: 47.5vw;\n    height: 16.9vw; }\n\n.content .button-wrapper.start {\n      -webkit-animation-name: wrapper-effect;\n              animation-name: wrapper-effect;\n      -webkit-animation-duration: 3s;\n              animation-duration: 3s;\n      -webkit-animation-fill-mode: forwards;\n              animation-fill-mode: forwards;\n      -webkit-animation-delay: 1.5s;\n              animation-delay: 1.5s; }\n\n.content .button-wrapper.start .button-inner-wrapper .dot {\n        -webkit-animation-name: dot-effect;\n                animation-name: dot-effect;\n        -webkit-animation-duration: 1.5s;\n                animation-duration: 1.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .button-wrapper.start .button-inner-wrapper button {\n        -webkit-animation-name: start-effect;\n                animation-name: start-effect;\n        -webkit-animation-duration: 1.5s;\n                animation-duration: 1.5s;\n        -webkit-animation-fill-mode: forwards;\n                animation-fill-mode: forwards; }\n\n.content .button-wrapper.start .button-inner-wrapper button span {\n          -webkit-animation-name: span-effect;\n                  animation-name: span-effect;\n          -webkit-animation-duration: 0.2s;\n                  animation-duration: 0.2s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 1.5s;\n                  animation-delay: 1.5s; }\n\n.content .button-wrapper.start .button-inner-wrapper button img {\n          -webkit-animation-name: img-effect;\n                  animation-name: img-effect;\n          -webkit-animation-duration: 1s;\n                  animation-duration: 1s;\n          -webkit-animation-fill-mode: forwards;\n                  animation-fill-mode: forwards;\n          -webkit-animation-delay: 1.5s;\n                  animation-delay: 1.5s; }\n\n.content .button-wrapper .button-inner-wrapper {\n      width: 100%;\n      height: 100%;\n      position: relative; }\n\n.content .button-wrapper .button-inner-wrapper .dot {\n        position: absolute;\n        width: 2.4vw;\n        height: 2.4vw;\n        border-radius: 50%;\n        right: 1.6vw;\n        top: 1.6vw; }\n\n.content .button-wrapper .button-inner-wrapper button {\n        background-color: #fff5fa;\n        color: #ea0076;\n        width: 100%;\n        height: 100%;\n        border: 0;\n        border-radius: 8.4vw;\n        font-weight: 600;\n        font-size: 5.3vw; }\n\n.content .button-wrapper .button-inner-wrapper button span {\n          font-size: 5.3vw;\n          display: inline-block;\n          width: 21.9vw;\n          height: 6.3vw;\n          overflow: hidden; }\n\n.content .button-wrapper .button-inner-wrapper button img {\n          display: inline-block;\n          background-color: #fff5fa;\n          height: 5.6vw;\n          margin-left: 3.1vw;\n          position: relative;\n          top: 0.3vw; }\n\n.content .button-wrapper .button-inner-wrapper button:focus {\n        outline: none; }\n"
+
+/***/ }),
+
+/***/ "./src/app/pages/main/mobile/main-m.ts":
+/*!*********************************************!*\
+  !*** ./src/app/pages/main/mobile/main-m.ts ***!
+  \*********************************************/
+/*! exports provided: MainPageMobile */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainPageMobile", function() { return MainPageMobile; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+// ng build --base-href https://go-eun.github.io --deploy-url https://go-eun.github.io/
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var MainPageMobile = /** @class */ (function () {
+    function MainPageMobile(router, renterer) {
         this.router = router;
         this.renterer = renterer;
         this.open = false;
         this.main = false;
         this.events = [];
     }
-    MainPage.prototype.ngOnInit = function () { };
-    MainPage.prototype.ngAfterViewInit = function () {
+    MainPageMobile.prototype.onResize = function (e) {
+        console.log(e);
+    };
+    MainPageMobile.prototype.ngOnInit = function () { };
+    MainPageMobile.prototype.ngAfterViewInit = function () {
         var _this = this;
         var buttonStream$ = rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].fromEvent(this.startButton.nativeElement, 'click')
             .do(function () {
@@ -1954,35 +2176,35 @@ var MainPage = /** @class */ (function () {
         });
         this.events.push(buttonStream$);
     };
-    MainPage.prototype.ngOnDestroy = function () {
+    MainPageMobile.prototype.ngOnDestroy = function () {
         this.events.forEach(function (ele) { return ele.unsubscribe(); });
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('content'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], MainPage.prototype, "content", void 0);
+    ], MainPageMobile.prototype, "content", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('startButton'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], MainPage.prototype, "startButton", void 0);
+    ], MainPageMobile.prototype, "startButton", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('dot'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], MainPage.prototype, "dot", void 0);
+    ], MainPageMobile.prototype, "dot", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('buttonWrapper'),
         __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], MainPage.prototype, "buttonWrapper", void 0);
-    MainPage = __decorate([
+    ], MainPageMobile.prototype, "buttonWrapper", void 0);
+    MainPageMobile = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'main-page',
-            template: __webpack_require__(/*! ./main.html */ "./src/app/pages/main/main.html"),
-            styles: [__webpack_require__(/*! ./main.scss */ "./src/app/pages/main/main.scss")]
+            selector: 'main-m-page',
+            template: __webpack_require__(/*! ./main-m.html */ "./src/app/pages/main/mobile/main-m.html"),
+            styles: [__webpack_require__(/*! ./main-m.scss */ "./src/app/pages/main/mobile/main-m.scss")]
         }),
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
-    ], MainPage);
-    return MainPage;
+    ], MainPageMobile);
+    return MainPageMobile;
 }());
 
 
